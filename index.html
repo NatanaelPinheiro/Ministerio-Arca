@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ministério Arca. Em busca da ovelha perdida.">
+    <title>Ministério Arca</title>
+    <link rel="icon" href="./assets/icons/favicon.png" style="width: 10px;">
+
+    <!-- preload -->
+    <!-- <link rel="preload" href="./js/swiper.min.js" as="script"> -->
+    <link rel="preload" href="https://unpkg.com/swiper@8/swiper-bundle.min.js" as="script">
+    <link rel="preload" href="./js/swiper.js" as="script">
+    <link rel="preload" href="./assets/icons/arca_logo.png" as="image">
+    <link rel="preload" href="./assets/images/banner_img_1.jpg" as="image">
+    <link rel="preload" href="./assets/images/banner_img_2.jpg" as="image">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <!-- <link rel="stylesheet" href="./css/swiper-minified/swiper.min.css"/> -->
+    <link rel="stylesheet" href="./css/main/main.css">
+    <link rel="stylesheet" href="./css/header/header.css">
+    <link rel="stylesheet" href="./css/banner/banner.css">
+    <link rel="stylesheet" href="./css/about-us/about-us.css">
+    <link rel="stylesheet" href="./css/altar/altar.css">
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            <a href="index.html" class="navbar-logo">
+                <img src="./assets/icons/arca_logo.png" alt="Ministério Arca">
+            </a>
+
+            <div class="menu-burger" onclick="toggleMenu()">
+                <span class="menu-bar"></span>
+            </div>
+
+            <div class="navbar-mobile">
+                <div class="menu-burger-close" onclick="toggleMenu()">
+                    <span class="menu-bar"></span>
+                </div>
+                <ul class="navbar-mobile--list">
+                    <li class="navbar-mobile--list--item"><a href="#inicio">Início</a></li>
+                    <li class="navbar-mobile--list--item"><a href="#sobre-nos">Sobre Nós</a></li>
+                    <li class="navbar-mobile--list--item"><a href="#nosso-altar">Nosso Altar</a></li>
+                    <li class="navbar-mobile--list--item"><a href="#">Atas Ministeriais</a></li>
+                    <li class="navbar-mobile--list--item"><a href="#">Ações Realizadas</a></li>
+                </ul>
+                <div class="navbar-mobile--footer">
+                    <p>AD Ministério Pentecostal Arca</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="inicio" class="banner">
+            <div class="banner-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-image">
+                            <img src="./assets/images/banner_img_2.jpg">
+                        </div>
+                        <div class="slide-content">
+                            <img src="./assets/icons/arca_logo.png" alt="Ministério Pentecostal Arca">
+                            <h3 class="slide-content--title">AD Ministério Arca</h3>
+                            <p class="slide-content--subtitle">Em busca da ovelha perdida</p>
+                            <a class="slide-content--cta" href="#sobre-nos">Conhecer mais</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-image">
+                            <img src="./assets/images/banner_img_1.jpg">
+                        </div>
+                        <div class="slide-content">
+                            <img src="./assets/icons/arca_logo.png" alt="Ministério Pentecostal Arca">
+                            <h3 class="slide-content--title">AD Ministério Arca</h3>
+                            <p class="slide-content--subtitle">Em busca da ovelha perdida</p>
+                            <a class="slide-content--cta" href="#sobre-nos">Conhecer mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div id="sobre-nos">
+            <div class="about-us">
+                <div class="about-us--header">
+                    <h2>Sobre nós</h2>
+                    <p>Conheça o nosso Ministério Pentecostal</p>
+                </div>
+                <div class="about-us--content">
+                    <div class="about-us--content-left">
+                        <p>
+                            A <b>AD Ministério Pentescostal Arca</b>,
+                            é um Ministério Pentecostal, levantado com o objetivo
+                            de adorar e exaltar a presença de Deus. Aqui, você tem liberdade
+                            pra deixar ser guiado pelo Espírito Santo de Deus.
+                        </p>
+                    </div>
+                    <div class="about-us--content-right">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.6196712061965!2d-38.64713312583414!3d-4.293836695680108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b8cd298cd4ebdd%3A0x7f1ed0b84ddf7330!2sMinist%C3%A9rio%20Pentecostal%20Arca!5e0!3m2!1spt-BR!2sbr!4v1695771254700!5m2!1spt-BR!2sbr" 
+                            style="width:100%;height:300px;border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="nosso-altar">
+            <div class="altar">
+                <div class="altar--header">
+                    <h2>Conheça Nosso Altar</h2>
+                    <p>Nossas lideranças e conjuntos.</p>
+                </div>
+                <div class="altar--content">
+                    <div class="altar--content-left">
+                        <div class="altar-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="slide-image">
+                                        <img src="./assets/images/pastor.jpeg">
+                                    </div>
+                                    <div class="slide-content">
+                                        <div class="slide-content--header">
+                                            <h3 class="slide-content--header-title">Pastor Antônio</h3>
+                                            <p class="slide-content--header-subtitle">Líder da igreja.</p>
+                                        </div>
+                                        <div class="slide-content--main">
+                                            <p>
+
+                                                Pastor, fundador do Ministério Pentecostal Arca, em 2019.
+                                                Desde então, vem fazendo a Obra de Deus, evangelizando e pregando a
+                                                palavra à toda criatura.
+                                            </p>
+                                        </div>
+                                        <a class="slide-content--cta" href="./assets/atas/ata-example.pdf" download="ata_geral_ministerio_arca">
+                                            <img src="./assets/icons/download_icon.svg">
+                                            Baixar Ata
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide-image">
+                                        <img src="./assets/images/obreiros.jpeg">
+                                    </div>
+                                    <div class="slide-content">
+                                        <div class="slide-content--header">
+                                            <h3 class="slide-content--header-title">Altar Completo</h3>
+                                            <p class="slide-content--header-subtitle">-</p>
+                                        </div>
+                                        <div class="slide-content--main">
+                                            <p>
+                                                Altar formado por Pastores, Presbíteros, Diáconos, e obreiros,
+                                                que auxiliam na realização da Obra de Deus.
+                                            </p>
+                                        </div>
+                                        <a class="slide-content--cta" href="./assets/atas/ata-example.pdf" download="ata_quadro_de_obreiros">
+                                            <img src="./assets/icons/download_icon.svg">
+                                            Baixar Ata
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide-image">
+                                        <img src="./assets/images/batismo.jpeg">
+                                    </div>
+                                    <div class="slide-content">
+                                        <div class="slide-content--header">
+                                            <h3 class="slide-content--header-title">Conjunto de Senhoras</h3>
+                                            <p class="slide-content--header-subtitle">-</p>
+                                        </div>
+                                        <div class="slide-content--main">
+                                            <p>
+                                                Conjunto formado pelas senhoras casadas, do Ministério.
+                                                Grupo seleto, que exige dedicação e coragem, pra continuar lutando contra
+                                                as ciladas do inimigo.
+                                            </p>
+                                        </div>
+                                        <a class="slide-content--cta" href="./assets/atas/ata-example.pdf" download="ata_conjunto_de_senhoras">
+                                            <img src="./assets/icons/download_icon.svg">
+                                            Baixar Ata
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide-image">
+                                        <img src="./assets/images/jovens.jpeg">
+                                    </div>
+                                    <div class="slide-content">
+                                        <div class="slide-content--header">
+                                            <h3 class="slide-content--header-title">Conjunto de Jovens</h3>
+                                            <p class="slide-content--header-subtitle">-</p>
+                                        </div>
+                                        <div class="slide-content--main">
+                                            <p>
+                                                Conjunto mais recente, formado por jovens batizados nas águas
+                                                e empenhados em continuar nos pés do Senhor.
+                                            </p>
+                                        </div>
+                                        <a class="slide-content--cta" href="./assets/atas/ata-example.pdf" download="ata_conjunto_de_jovens">
+                                            <img src="./assets/icons/download_icon.svg">
+                                            Baixar Ata
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="swiper-pagination"></div> -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <div class="altar--content-right"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- <script src="./js/swiper.min.js"></script> -->
+    <script src="./js/swiper.js"></script>
+    <script src="./js/utils.js"></script>
+</body>
+</html>

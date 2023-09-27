@@ -1,0 +1,50 @@
+.about-us{
+    padding: 2.5rem 1.5rem 2.5rem 1.5rem;
+    &--header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h2{
+            font-size: 20px;
+            text-transform: capitalize;
+            color: var(--primary-color);
+        }
+        p{
+            font-size: 15px;
+            text-transform: capitalize;
+            color: var(--primary-color);
+        }
+    }
+    &--content{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 0 0;
+        gap: 2rem;
+        &-left{
+            p{
+                text-align: left;
+                font-size: 14px;
+                line-height: 1.4;
+                color: var(--text-color-primary);
+                b{
+                    color: #ebc710;
+                }
+            }
+        }
+        &-right{
+            .image{
+                width: 100%;
+                max-width: 400px;
+                height: 300px;
+                aspect-ratio: 1/1;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+
+:root{
+    --white-color: #fff;
+    --primary-color: #921403;
+    --secondary-color: #fcd515;
+    --background-color: #2e0601;
+    --text-color-primary: #361901;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #fafeff;
+
+    @media screen and (max-width: 768px){
+        &:has(.navbar-mobile.active){
+            overflow: hidden;
+            &::after{
+                content: '';
+                position: absolute;
+                inset: 0;
+                background-color: #000000a5;
+                z-index: 11;
+            }
+            header{
+                background-color: #1e0401;
+            }
+        }
+    }
+}
+
+a{
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}

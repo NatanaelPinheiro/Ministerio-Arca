@@ -1,0 +1,124 @@
+header {
+  position: fixed;
+  z-index: 12;
+  position: absolute;
+  height: 70px;
+  width: 100%;
+  padding: 0 2rem;
+  background-color: var(--background-color);
+}
+header #navbar {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+header #navbar .navbar-logo {
+  color: var(--white-color);
+  text-decoration: none;
+}
+header #navbar .navbar-logo img {
+  width: 80px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header #navbar .menu-burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+header #navbar .menu-burger .menu-bar {
+  position: relative;
+  width: 25px;
+  height: 3px;
+  background-color: var(--white-color);
+}
+header #navbar .menu-burger .menu-bar::after, header #navbar .menu-burger .menu-bar::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  background-color: var(--white-color);
+  height: 100%;
+  width: 100%;
+}
+header #navbar .menu-burger .menu-bar::after {
+  bottom: 7px;
+}
+header #navbar .menu-burger .menu-bar::before {
+  bottom: -7px;
+}
+header #navbar .navbar-mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 70%;
+  padding: 17px 0 0 2rem;
+  background-color: var(--background-color);
+  background-image: url("../../assets/images/texture_3.png");
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+  z-index: 12;
+}
+header #navbar .navbar-mobile.active {
+  transform: translateX(0%);
+}
+header #navbar .navbar-mobile--list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+header #navbar .navbar-mobile--list--item a {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+header #navbar .navbar-mobile--list--item a.book-link {
+  display: inline-block;
+  padding: 0.9rem 2rem;
+  background-color: var(--primary-color);
+}
+header #navbar .navbar-mobile .menu-burger-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 65px;
+}
+header #navbar .navbar-mobile .menu-burger-close .menu-bar {
+  position: relative;
+  width: 25px;
+  height: 3px;
+  background-color: var(--white-color);
+  rotate: 45deg;
+}
+header #navbar .navbar-mobile .menu-burger-close .menu-bar::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  background-color: var(--white-color);
+  height: 100%;
+  width: 100%;
+  rotate: 90deg;
+}
+header #navbar .navbar-mobile--footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 0 2rem 0;
+  background-color: #2e0601;
+  background-image: url("../../assets/images/texture_2.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header #navbar .navbar-mobile--footer p {
+  color: #5b2e26;
+}/*# sourceMappingURL=header.css.map */

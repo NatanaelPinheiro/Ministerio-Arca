@@ -1,0 +1,118 @@
+.altar {
+  padding: 2rem 1.5rem 2rem 1.5rem;
+  background-color: var(--background-color);
+  background-image: url("../../assets/images/texture_1.png");
+}
+.altar--header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.altar--header h2 {
+  font-size: 20px;
+  text-transform: capitalize;
+  color: var(--white-color);
+  text-align: center;
+}
+.altar--header p {
+  font-size: 15px;
+  text-transform: capitalize;
+  color: var(--white-color);
+  opacity: 0.9;
+  text-align: center;
+}
+.altar--content {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0 0;
+  gap: 2rem;
+}
+.altar--content-left {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.altar--content-left .swiper-wrapper,
+.altar--content-left .altar-swiper {
+  position: relative;
+  width: 80vw;
+  height: 400px;
+}
+.altar--content-left .altar-swiper {
+  position: relative;
+}
+.altar--content-left .altar-swiper .swiper-wrapper {
+  border-radius: 15px;
+}
+.altar--content-left .altar-swiper .swiper-wrapper .slide-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+}
+.altar--content-left .altar-swiper .swiper-wrapper .slide-image img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.altar--content-left .altar-swiper .swiper-wrapper .slide-content {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #cfcfcf;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.altar--content-left .altar-swiper .swiper-wrapper .slide-content--header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.altar--content-left .altar-swiper .swiper-wrapper .slide-content--header-title {
+  font-size: 18px;
+  color: var(--text-color-primary);
+}
+.altar--content-left .altar-swiper .swiper-wrapper .slide-content--header-subtitle {
+  font-size: 13px;
+  color: var(--text-color-primary);
+}
+.altar--content-left .altar-swiper .swiper-wrapper .slide-content--main p {
+  margin: 1rem 0;
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--text-color-primary);
+}
+.altar--content-left .altar-swiper .swiper-wrapper .slide-content--cta {
+  display: inline-block;
+  width: 100%;
+  padding: 0.5rem 0;
+  text-align: center;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  font-size: 17px;
+  line-height: 17px;
+}
+.altar--content-left .altar-swiper .swiper-wrapper .slide-content--cta img {
+  margin-bottom: -1px;
+}
+.altar--content-left .altar-swiper .swiper-button-prev,
+.altar--content-left .altar-swiper .swiper-button-next {
+  position: absolute !important;
+  top: 40% !important;
+  color: var(--white-color) !important;
+}/*# sourceMappingURL=altar.css.map */
