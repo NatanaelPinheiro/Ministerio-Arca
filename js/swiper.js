@@ -13,7 +13,7 @@ var teams_swiper = new Swiper(".banner-swiper ", {
     mousewheel: false,
     pagination: {
       el: '.swiper-pagination',
-      clickable: true,
+      clickable: false,
         renderBullet: function (index, className) {
           return '<span class="' + className + '"></span>';
         },
@@ -21,26 +21,16 @@ var teams_swiper = new Swiper(".banner-swiper ", {
 });
 
 var altar_swiper = new Swiper(".altar-swiper ", {
-  loopedSlides: 1,
+  loopedSlides: 2,
   loop: true,
   slidesPerView: 1,
   freeMode: true,
   autoplay: false,
-  // autoplay: {
-  //   delay: 1500,
-  // },
   mousewheel: {
     releaseOnEdges: true,
   },
   allowTouchMove: false,
   mousewheel: false,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-      renderBullet: function (index, className) {
-        return '<span class="' + className + '"></span>';
-      },
-  },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
