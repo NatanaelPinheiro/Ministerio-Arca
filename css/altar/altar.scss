@@ -16,7 +16,7 @@
             text-align: center;
         }
         p{
-            font-size: 15px;
+            font-size: 13px;
             text-transform: capitalize;
             color: var(--white-color);
             opacity: 0.9;
@@ -119,6 +119,12 @@
                     color: var(--white-color) !important;
                 }
             }
+        }
+        &-right{
+            // li{
+            //     color: var(--white-color);
+            //     font-size: 15px;
+            // }
         }
     }
 }

@@ -16,7 +16,7 @@
   text-align: center;
 }
 .altar--header p {
-  font-size: 15px;
+  font-size: 13px;
   text-transform: capitalize;
   color: var(--white-color);
   opacity: 0.9;
