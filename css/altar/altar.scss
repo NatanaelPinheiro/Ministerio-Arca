@@ -11,15 +11,16 @@
         h2{
             font-size: 20px;
             text-transform: capitalize;
+            width: 100%;
+            padding: 0.5rem 0;
+            text-align: center;
+            margin-bottom: 0.5rem;
             // color: #1d416b;
             color: var(--white-color);
             background-color: var(--palette-yellow);
             background-image: url('../../assets/images/texture_2.png');
             box-shadow: 1px 1px 8px #6682a1;
-            width: 100%;
-            padding: 0.5rem 0;
-            text-align: center;
-            margin-bottom: 0.5rem;
+            border-radius: 5px;
         }
         p{
             display: none;
@@ -131,7 +132,6 @@
         &-right{
             h3{
                 font-size: 17px;
-                // color: #1d416b;
                 margin-bottom: 1.5rem;
                 padding: 0.5rem;
                 width: fit-content;
@@ -139,6 +139,7 @@
                 background-color: var(--palette-yellow);
                 background-image: url('../../assets/images/texture_2.png');
                 box-shadow: 1px 1px 8px #7b97b7;
+                border-radius: 5px;
             }
             p{
                 font-size: 13px;
