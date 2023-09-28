@@ -1,6 +1,5 @@
 .altar{
     padding: 2rem 1.5rem 2rem 1.5rem;
-    // background-color: var(--background-color);
     background-color: var(--palette-blue);
     background-image: url('../../assets/images/texture_1.png');
 
@@ -21,9 +20,6 @@
             padding: 0.5rem 0;
             text-align: center;
             margin-bottom: 0.5rem;
-            // span{
-            //     color: var(--primary-color);
-            // }
         }
         p{
             display: none;
@@ -74,10 +70,7 @@
                     }
 
                     .slide-content{
-                        // background-color: #cfcfcf;
-                        // background-color: rgb(146, 29, 29);
                         background-color: #fafeff;
-                        // background-image: url('../../assets/images/texture_1.png');
                         position: absolute;
                         bottom: 0;
                         left: 0;
@@ -95,14 +88,10 @@
                             width: 100%;
                             &-title{
                                 font-size: 18px;
-                                // color: var(--white-color);
-                                // color: var(--palette-blue);
                                 color:#698eb9;
                             }
                             &-subtitle{
                                 font-size: 13px;
-                                // color: var(--white-color);
-                                // color: var(--text-color-primary);
                                 color: #375980;
                             }
                         }
@@ -111,8 +100,6 @@
                                 margin: 1rem 0;
                                 font-size: 13px;
                                 line-height: 1.4;
-                                // color: var(--text-color-primary);
-                                // color: #e2d7d7;
                                 color: #375980;
 
                             }
@@ -124,7 +111,6 @@
                             text-align: center;
                             border-radius: 5px;
                             background-color: #698eb9;
-                            // background-color: var(--white-color);
                             font-size: 17px;
                             line-height: 17px;
                             color: var(--white-color);
