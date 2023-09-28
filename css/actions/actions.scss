@@ -63,6 +63,9 @@
                     &--text{
                         font-size: 15px;
                         line-height: 1.4;
+                        b{
+                            color: var(--secondary-color);
+                        }
                     }
                 }
             }

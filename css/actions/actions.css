@@ -65,4 +65,7 @@
 .actions--content .actions-swiper .swiper-wrapper .slide-content--text {
   font-size: 15px;
   line-height: 1.4;
+}
+.actions--content .actions-swiper .swiper-wrapper .slide-content--text b {
+  color: var(--secondary-color);
 }/*# sourceMappingURL=actions.css.map */
