@@ -1,6 +1,14 @@
 .altar {
+  position: relative;
   padding: 2rem 0;
-  background-color: var(--palette-blue);
+  background-color: #c49b14;
+  background-image: linear-gradient(to top right, #63160c, #8c2626, #9e2d2d, #ac1515, #b80a0a);
+}
+.altar::after {
+  z-index: 0;
+  content: "";
+  position: absolute;
+  inset: 0;
   background-image: url("../../assets/images/texture_1.png");
 }
 .altar--header {
@@ -11,23 +19,18 @@
   padding: 0 1.5rem;
 }
 .altar--header h2 {
+  z-index: 100;
   font-size: 20px;
   text-transform: capitalize;
   width: 100%;
-  padding: 0.5rem 0;
   text-align: center;
-  margin-bottom: 0.5rem;
   color: var(--white-color);
-  background-color: var(--palette-yellow);
-  background-image: url("../../assets/images/texture_2.png");
-  box-shadow: 1px 1px 8px #6682a1;
-  border-radius: 5px;
 }
 .altar--header p {
-  display: none;
+  z-index: 100;
   font-size: 13px;
   text-transform: capitalize;
-  color: var(--palette-red);
+  color: var(--white-color);
   opacity: 0.9;
   text-align: center;
 }
@@ -97,7 +100,7 @@
 }
 .altar--content-left .altar-swiper .swiper-wrapper .slide-content--header-title {
   font-size: 18px;
-  color: #698eb9;
+  color: var(--palette-yellow);
 }
 .altar--content-left .altar-swiper .swiper-wrapper .slide-content--header-subtitle {
   font-size: 13px;
@@ -115,7 +118,7 @@
   padding: 0.5rem 0;
   text-align: center;
   border-radius: 5px;
-  background-color: #698eb9;
+  background-color: var(--palette-yellow);
   font-size: 17px;
   line-height: 17px;
   color: var(--white-color);
@@ -130,19 +133,16 @@
   color: var(--white-color) !important;
 }
 .altar--content-right {
+  z-index: 100;
   padding: 0 1.5rem;
 }
 .altar--content-right h3 {
   font-size: 17px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   padding: 0.5rem;
   width: -moz-fit-content;
   width: fit-content;
   color: var(--white-color);
-  background-color: var(--palette-yellow);
-  background-image: url("../../assets/images/texture_2.png");
-  box-shadow: 1px 1px 8px #7b97b7;
-  border-radius: 5px;
 }
 .altar--content-right p {
   font-size: 13px;

@@ -1,7 +1,16 @@
 .altar{
+    position: relative;
     padding: 2rem 0;
-    background-color: var(--palette-blue);
-    background-image: url('../../assets/images/texture_1.png');
+    background-color: #c49b14;
+    // background-image: linear-gradient(to top right, #a88208, #a78927, #bb9311, #E6B308ff);
+    background-image: linear-gradient(to top right, #63160c, #8c2626,#9e2d2d, #ac1515, #b80a0a);
+    &::after{
+        z-index: 0;
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-image: url('../../assets/images/texture_1.png');
+    }
 
     &--header{
         display: flex;
@@ -10,24 +19,18 @@
         justify-content: center;
         padding: 0 1.5rem;
         h2{
+            z-index: 100;
             font-size: 20px;
             text-transform: capitalize;
             width: 100%;
-            padding: 0.5rem 0;
             text-align: center;
-            margin-bottom: 0.5rem;
-            // color: #1d416b;
             color: var(--white-color);
-            background-color: var(--palette-yellow);
-            background-image: url('../../assets/images/texture_2.png');
-            box-shadow: 1px 1px 8px #6682a1;
-            border-radius: 5px;
         }
         p{
-            display: none;
+            z-index: 100;
             font-size: 13px;
             text-transform: capitalize;
-            color: var(--palette-red);
+            color: var(--white-color);
             opacity: 0.9;
             text-align: center;
         }
@@ -96,7 +99,7 @@
                             width: 100%;
                             &-title{
                                 font-size: 18px;
-                                color:#698eb9;
+                                color:var(--palette-yellow);
                             }
                             &-subtitle{
                                 font-size: 13px;
@@ -118,7 +121,7 @@
                             padding: 0.5rem 0;
                             text-align: center;
                             border-radius: 5px;
-                            background-color: #698eb9;
+                            background-color: var(--palette-yellow);
                             font-size: 17px;
                             line-height: 17px;
                             color: var(--white-color);
@@ -137,17 +140,14 @@
             }
         }
         &-right{
+            z-index: 100;
             padding: 0 1.5rem;
             h3{
                 font-size: 17px;
-                margin-bottom: 1.5rem;
+                margin-bottom: 1rem;
                 padding: 0.5rem;
                 width: fit-content;
                 color: var(--white-color);
-                background-color: var(--palette-yellow);
-                background-image: url('../../assets/images/texture_2.png');
-                box-shadow: 1px 1px 8px #7b97b7;
-                border-radius: 5px;
             }
             p{
                 font-size: 13px;
