@@ -2,7 +2,7 @@ var teams_swiper = new Swiper(".banner-swiper ", {
     loopedSlides: 1,
     loop: true,
     slidesPerView: 1,
-    freeMode: true,
+    freeMode: false,
     autoplay: {
       delay: 2000,
     },
@@ -21,15 +21,17 @@ var teams_swiper = new Swiper(".banner-swiper ", {
 });
 
 var altar_swiper = new Swiper(".altar-swiper ", {
-  loopedSlides: 2,
+  loopedSlides: 3,
   loop: true,
-  slidesPerView: 1,
-  freeMode: true,
+  slidesPerView: 'auto',
+  spaceBetween: 20,
+  freeMode: false,
   autoplay: false,
+  centeredSlides: true,
   mousewheel: {
     releaseOnEdges: true,
   },
-  allowTouchMove: false,
+  allowTouchMove: true,
   mousewheel: false,
   navigation: {
     nextEl: '.swiper-button-next',
