@@ -1,7 +1,7 @@
 .altar {
   position: relative;
   padding: 2rem 0;
-  background-color: #c49b14;
+  background-color: #9e2d2d;
   background-image: linear-gradient(to top right, #63160c, #8c2626, #9e2d2d, #ac1515, #b80a0a);
 }
 .altar::after {
