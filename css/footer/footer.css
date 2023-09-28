@@ -1,0 +1,42 @@
+footer {
+  width: 100%;
+  background-color: var(--background-color);
+  padding: 2rem 0 0 0;
+}
+footer .links {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 1.5rem 1rem 1.5rem;
+}
+footer .links ul h4 {
+  font-size: 16px;
+  color: var(--white-color);
+  margin-bottom: 1rem;
+}
+footer .links ul li {
+  margin-bottom: 0.3rem;
+}
+footer .links ul li a {
+  text-decoration: underline;
+  font-size: 14px;
+  color: var(--white-color);
+}
+footer .copy {
+  padding: 1rem 1rem 1.5rem 1rem;
+  background-color: #200400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .copy img {
+  width: 70px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+footer .copy p {
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--white-color);
+}/*# sourceMappingURL=footer.css.map */
