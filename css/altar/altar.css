@@ -1,6 +1,6 @@
 .altar {
   padding: 2rem 1.5rem 2rem 1.5rem;
-  background-color: var(--background-color);
+  background-color: var(--palette-blue);
   background-image: url("../../assets/images/texture_1.png");
 }
 .altar--header {
@@ -13,18 +13,25 @@
   font-size: 20px;
   text-transform: capitalize;
   color: var(--white-color);
+  background-color: var(--palette-yellow);
+  background-image: url("../../assets/images/texture_2.png");
+  box-shadow: 1px 1px 8px #6682a1;
+  width: 100%;
+  padding: 0.5rem 0;
   text-align: center;
+  margin-bottom: 0.5rem;
 }
 .altar--header p {
+  display: none;
   font-size: 13px;
   text-transform: capitalize;
-  color: var(--white-color);
+  color: var(--palette-red);
   opacity: 0.9;
   text-align: center;
 }
 .altar--content {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   padding: 2rem 0 0;
   gap: 2rem;
 }
@@ -63,7 +70,7 @@
      object-fit: cover;
 }
 .altar--content-left .altar-swiper .swiper-wrapper .slide-content {
-  background-color: #cfcfcf;
+  background-color: #fafeff;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -83,17 +90,17 @@
 }
 .altar--content-left .altar-swiper .swiper-wrapper .slide-content--header-title {
   font-size: 18px;
-  color: var(--text-color-primary);
+  color: #698eb9;
 }
 .altar--content-left .altar-swiper .swiper-wrapper .slide-content--header-subtitle {
   font-size: 13px;
-  color: var(--text-color-primary);
+  color: #375980;
 }
 .altar--content-left .altar-swiper .swiper-wrapper .slide-content--main p {
   margin: 1rem 0;
   font-size: 13px;
   line-height: 1.4;
-  color: var(--text-color-primary);
+  color: #375980;
 }
 .altar--content-left .altar-swiper .swiper-wrapper .slide-content--cta {
   display: inline-block;
@@ -101,9 +108,10 @@
   padding: 0.5rem 0;
   text-align: center;
   border-radius: 5px;
-  background-color: var(--primary-color);
+  background-color: #698eb9;
   font-size: 17px;
   line-height: 17px;
+  color: var(--white-color);
 }
 .altar--content-left .altar-swiper .swiper-wrapper .slide-content--cta img {
   margin-bottom: -1px;
@@ -113,4 +121,20 @@
   position: absolute !important;
   top: 40% !important;
   color: var(--white-color) !important;
+}
+.altar--content-right h3 {
+  font-size: 17px;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: var(--white-color);
+  background-color: var(--palette-yellow);
+  background-image: url("../../assets/images/texture_2.png");
+  box-shadow: 1px 1px 8px #7b97b7;
+}
+.altar--content-right p {
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--white-color);
 }/*# sourceMappingURL=altar.css.map */

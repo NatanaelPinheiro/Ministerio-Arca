@@ -4,7 +4,7 @@ var teams_swiper = new Swiper(".banner-swiper ", {
     slidesPerView: 1,
     freeMode: true,
     autoplay: {
-      delay: 1500,
+      delay: 2000,
     },
     mousewheel: {
       releaseOnEdges: true,
