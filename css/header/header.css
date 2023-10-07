@@ -121,4 +121,31 @@ header #navbar .navbar-mobile--footer {
 }
 header #navbar .navbar-mobile--footer p {
   color: #5b2e26;
+}
+header #navbar .navbar-desktop {
+  display: none;
+}
+header #navbar .navbar-desktop .navbar--list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+header #navbar .navbar-desktop .navbar--list--item a {
+  display: inline-block;
+  padding: 0.3rem 0.5rem;
+  font-size: 13px;
+}
+@media screen and (min-width: 768px) {
+  header #navbar {
+    flex-direction: row;
+  }
+  header #navbar .menu-burger {
+    display: none;
+  }
+  header #navbar .navbar-mobile {
+    display: none;
+  }
+  header #navbar .navbar-desktop {
+    display: block;
+  }
 }/*# sourceMappingURL=header.css.map */

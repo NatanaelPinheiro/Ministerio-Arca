@@ -9,7 +9,7 @@ footer .links {
   align-items: flex-start;
   padding: 0 1.5rem 1rem 1.5rem;
 }
-footer .links ul h4 {
+footer .links h4 {
   font-size: 16px;
   color: var(--white-color);
   margin-bottom: 1rem;
@@ -39,4 +39,26 @@ footer .copy p {
   font-size: 13px;
   line-height: 1.4;
   color: var(--white-color);
+}
+@media screen and (min-width: 768px) {
+  footer .links {
+    justify-content: space-around;
+  }
+  footer .links h4 {
+    text-align: center;
+  }
+  footer .links ul {
+    display: flex;
+  }
+  footer .links ul li a {
+    font-size: 12px;
+    padding: 0.3rem 0.4rem;
+  }
+  footer .links ul li a::after {
+    content: "|";
+    margin-left: 0.4rem;
+  }
+  footer .links ul li:last-of-type a::after {
+    content: "";
+  }
 }/*# sourceMappingURL=footer.css.map */

@@ -8,12 +8,12 @@ footer{
         justify-content: space-between;
         align-items: flex-start;
         padding: 0 1.5rem 1rem 1.5rem;
+        h4{
+            font-size: 16px;
+            color: var(--white-color);
+            margin-bottom: 1rem;
+        }
         ul{
-            h4{
-                font-size: 16px;
-                color: var(--white-color);
-                margin-bottom: 1rem;
-            }
             li{
                 margin-bottom: 0.3rem;
                 a{
@@ -40,6 +40,35 @@ footer{
             font-size: 13px;
             line-height: 1.4;
             color: var(--white-color);
+        }
+    }
+
+    @media screen and (min-width: 768px){
+        .links{
+            justify-content: space-around;
+            h4{
+                text-align: center;
+            }
+            ul{
+                display: flex;
+                li{
+                    a{
+                        font-size: 12px;
+                        padding: 0.3rem 0.4rem;
+                        &::after{
+                            content: '|';
+                            margin-left: 0.4rem;
+                        }
+                    }
+                }
+                li:last-of-type{
+                    a{
+                        &::after{
+                            content: '';
+                        }
+                    }
+                }
+            }
         }
     }
 }

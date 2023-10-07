@@ -131,5 +131,36 @@ header{
                 }
             }
         }
+
+        .navbar-desktop{
+            display: none;
+            .navbar--list{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                &--item{
+                    a{
+                        display: inline-block;
+                        padding: 0.3rem 0.5rem;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px){
+        #navbar{
+            flex-direction: row;
+            .menu-burger{
+                display: none;
+            }
+            .navbar-mobile{
+                display: none;
+            }
+            .navbar-desktop{
+                display: block;
+            }
+        }
     }
 }
