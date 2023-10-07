@@ -29,9 +29,11 @@ body.addEventListener('click', function(event){
 let slides;
 let slideTextNumber;
 
-var intervalId = window.setInterval(function(){
-    checkSlideIndex();
-}, 100);
+if(window.innerWidth >= 1024){
+    var intervalId = window.setInterval(function(){
+        checkSlideIndex();
+    }, 100);
+}
 
 function checkSlideIndex(){
     let slideActive = document.querySelector('.altar-slide-active');
