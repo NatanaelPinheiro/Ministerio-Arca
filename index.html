@@ -91,8 +91,8 @@
         <div id="sobre-nos">
             <div class="about-us">
                 <div class="about-us--header">
-                    <h2>Sobre nós</h2>
-                    <p>Conheça o nosso Ministério Pentecostal</p>
+                    <h2>Sobre Nós<span class="lg-visible">, Conheça o Nosso Ministério Pentecostal</span></h2>
+                    <p class="lg-invisible">Conheça o nosso Ministério Pentecostal</p>
                 </div>
                 <div class="about-us--content">
                     <div class="about-us--content-left">
@@ -134,8 +134,12 @@
         <div id="nosso-altar">
             <div class="altar">
                 <div class="altar--header">
-                    <h2>Conheça Nosso <span>Altar</span></h2>
-                    <p>Nossas lideranças e conjuntos.</p>
+                    <h2>
+                        Conheça Nosso <span>Altar</span>
+                        <br class="lg-visible">
+                        <span class="lg-visible">Nossas lideranças e conjuntos.</span>
+                    </h2>
+                    <p class="lg-invisible">Nossas lideranças e conjuntos.</p>
                 </div>
                 <div class="altar--content">
                     <div class="altar--content-left">
@@ -145,7 +149,7 @@
                                     <div class="slide-image">
                                         <img src="./assets/images/pastor.jpeg">
                                     </div>
-                                    <div class="slide-content">
+                                    <div class="slide-content slide-1">
                                         <div class="slide-content--header">
                                             <h3 class="slide-content--header-title">Pastor Antônio</h3>
                                             <p class="slide-content--header-subtitle">
@@ -170,7 +174,7 @@
                                     <div class="slide-image">
                                         <img src="./assets/images/obreiros.jpeg">
                                     </div>
-                                    <div class="slide-content">
+                                    <div class="slide-content slide-2">
                                         <div class="slide-content--header">
                                             <h3 class="slide-content--header-title">Altar Completo</h3>
                                             <p class="slide-content--header-subtitle">
@@ -193,7 +197,7 @@
                                     <div class="slide-image">
                                         <img src="./assets/images/batismo.jpeg">
                                     </div>
-                                    <div class="slide-content">
+                                    <div class="slide-content slide-3">
                                         <div class="slide-content--header">
                                             <h3 class="slide-content--header-title">Essência Divina</h3>
                                             <p class="slide-content--header-subtitle">
@@ -217,7 +221,7 @@
                                     <div class="slide-image">
                                         <img src="./assets/images/jovens.jpeg">
                                     </div>
-                                    <div class="slide-content">
+                                    <div class="slide-content slide-4">
                                         <div class="slide-content--header">
                                             <h3 class="slide-content--header-title">Jovens para Cristo</h3>
                                             <p class="slide-content--header-subtitle">
@@ -243,31 +247,87 @@
                         </div>
                     </div>
                     <div class="altar--content-right">
-                        <h3>Agenda de cultos</h3>
-                        <p>
+                        <div class="slide-text slide-text-1 lg-visible">
+                            <h3>Pastor Antônio</h3>
+                            <p>
+                                Pastor, fundador do Ministério Pentecostal Arca, em 2019.
+                                Desde então, vem fazendo a Obra de Deus, evangelizando e pregando a
+                                palavra à toda criatura. Além da Sede, o Ministério Arca possui outro templo
+                                localizado no bairro de Batalha, em Barreira, Ceará.
+                            </p>
+                            <a class="slide-text--cta" href="./assets/atas/ata-example.pdf" download="ata_geral_ministerio_arca">
+                                <img src="./assets/icons/download_icon.svg">
+                                Baixar Ata - Ministérial
+                            </a>
+                        </div>
+                        <div class="slide-text slide-text-2 lg-visible">
+                            <h3>Altar Completo</h3>
+                            <p>
+                                O Altar conta com Pastores, Presbíteros, Diáconos, e obreiros,
+                                que auxiliam diariamente na realização da Obra de Deus, dirigindo
+                                cultos, missões, ações de graça e evangelismos por todo a cidade
+                                de Barreira, além de cidades vizinhas.
+                            </p>
+                            <a class="slide-text--cta" href="./assets/atas/ata-example.pdf" download="ata_quadro_de_obreiros">
+                                <img src="./assets/icons/download_icon.svg">
+                                Baixar Ata - Obreiros
+                            </a>
+                        </div>
+                        <div class="slide-text slide-text-3 lg-visible">
+                            <h3>Conjunto de Senhoras</h3>
+                            <p>
+                                Conjunto formado pelas senhoras casadas, do Ministério.
+                                Grupo seleto, que exige dedicação e coragem, pra continuar lutando contra
+                                as ciladas do inimigo. Uma vez por mês, dirigem um culto especial, que conta
+                                com a presença de diversos Conjuntos externos, e muita adoração ao Senhor.
+                            </p>
+                            <a class="slide-text--cta" href="./assets/atas/ata-example.pdf" download="ata_conjunto_de_senhoras">
+                                <img src="./assets/icons/download_icon.svg">
+                                Baixar Ata - Senhoras
+                            </a>
+                        </div>
+                        <div class="slide-text slide-text-4 lg-visible">
+                            <h3>Conjunto de Jovens</h3>
+                            <p>
+                                Conjunto mais recente, formado por jovens batizados nas águas
+                                e empenhados em continuar nos pés do Senhor. Todo mês, os jovens
+                                do conjunto têm a oportunidade de dirigir um culto. Nesse culto, com
+                                direcionamento à mocidade, jovens de diversos ministérios contam com
+                                a oportunidade de dar o seu melhor louvor à Deus.
+                            </p>
+                            <a class="slide-text--cta" href="./assets/atas/ata-example.pdf" download="ata_conjunto_de_jovens">
+                                <img src="./assets/icons/download_icon.svg">
+                                Baixar Ata - Jovens
+                            </a>
+                        </div>
+
+                        <h3 class="lg-invisible">Agenda de cultos</h3>
+                        <p class="lg-invisible">
                             <b>Temos culto todas as quarta, sextas e domingo.</b>
                             Às quartas, dias de doutrina, culto de senhora e de jovens.
                             Nas sextas, culto de oração, e nos domingos, cultos
                             de família, missões, avivamentos e Santa Ceias.
                         </p>
-                        <div class="md-visible">
-                            <!-- <ul>
-                                <span>Quartas:</span>
-                                <li>Cultos de doutrinas, jovens e senhoras.</li>
-                                <span>Sextas:</span>
-                                <li>Cultos de oração</li>
-                                <span>Domingos:</span>
-                                <li>Adoração, família, avivamento, missões e Santa Ceia</li>
-                            </ul> -->
-                            <p><span>Quartas:</span> doutrina</p>
-                            <p><span>Sextas:</span> oração</p>
-                            <span>Domingos:</span>
+                        <div class="md-visible lg-invisible">
+                            <p><span class="bold-white">Quartas:</span> Doutrinas<span class="lg-visible">, Culto de Senhoras, Culto de Jovens</span></p>
+                            <p><span class="bold-white">Sextas:</span> Culto de Oração</p>
+                            <span class="bold-white">Domingos:</span>
                             <ul>
-                                <li>1° Dom: família</li>
-                                <li>2° Dom: avivamento</li>
-                                <li>3° Dom: missão</li>
+                                <li>1° Dom: Família</li>
+                                <li>2° Dom: Avivamento</li>
+                                <li>3° Dom: Missão</li>
                                 <li>4° Dom: Santa Ceia</li>
                             </ul>
+                        </div>
+                        <div class="lg-visible calendar">
+                            <p>
+                                Durante os mês, os cultos são organizados com direfentes temáticas,
+                                a depender da semana. Clique no botão abaixo, e verique nossa agenda de cultos.
+                            </p>
+                            <a class="calendar--cta" href="./assets/calendar/calendario.pdf" download="calendario_mensal">
+                                <img src="./assets/icons/download_icon.svg">
+                                Calendário de Cultos
+                            </a>
                         </div>
                     </div>
                 </div>

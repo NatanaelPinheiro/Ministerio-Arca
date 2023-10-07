@@ -54,4 +54,44 @@
     width: auto !important;
     max-width: 300px;
   }
+}
+@media screen and (min-width: 1024px) {
+  .about-us {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem;
+  }
+  .about-us--header h2 {
+    text-align: center;
+    font-size: 25px;
+    text-transform: none;
+    color: var(--primary-color);
+  }
+  .about-us--content {
+    align-items: flex-start;
+    gap: 0;
+  }
+  .about-us--content-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+    height: 400px;
+    background-color: #dbe3ec;
+    background-image: url("../../assets/textures/texture_6.png");
+  }
+  .about-us--content-left p {
+    max-width: 90%;
+    font-size: 13px;
+    line-height: 1.7;
+  }
+  .about-us--content-left p b {
+    color: rgb(143, 20, 20);
+  }
+  .about-us--content-right iframe {
+    width: 40vw !important;
+    max-width: none;
+    height: 400px !important;
+  }
 }/*# sourceMappingURL=about-us.css.map */

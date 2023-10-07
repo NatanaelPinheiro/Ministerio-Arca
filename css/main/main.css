@@ -57,4 +57,28 @@ li {
   .md-visible {
     display: block;
   }
+}
+
+.sm-visible {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .sm-visible {
+    display: none;
+  }
+}
+
+.lg-visible {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .lg-visible {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .lg-invisible {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */

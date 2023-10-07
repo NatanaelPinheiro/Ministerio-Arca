@@ -62,7 +62,7 @@ header{
             width: 70%;
             padding: 17px 0 0 2rem;
             background-color: var(--background-color);
-            background-image: url('../../assets/images/texture_3.png');
+            background-image: url('../../assets/textures/texture_3.png');
             transform: translateX(-100%);
             transition: transform .5s;
             z-index: 12;
@@ -122,7 +122,7 @@ header{
                 // height: 40px;
                 padding: 2rem 0 2rem 0;
                 background-color: #2e0601;
-                background-image: url('../../assets/images/texture_2.png');
+                background-image: url('../../assets/textures/texture_2.png');
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -160,6 +160,28 @@ header{
             }
             .navbar-desktop{
                 display: block;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1024px){
+        height: 80px;
+        #navbar{
+            max-width: 1000px;
+            margin: 0 auto;
+            .navbar-logo{
+                img{
+                    width: 120px;
+                }
+            }
+            .navbar-desktop{
+                .navbar--list{
+                    &--item{
+                        a{
+                            font-size: 14px;
+                        }
+                    }
+                }
             }
         }
     }

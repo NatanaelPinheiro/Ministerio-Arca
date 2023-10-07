@@ -59,3 +59,23 @@ li{
         display: block;
     }
 }
+
+.sm-visible{
+    display: block;
+    @media screen and (min-width: 768px){
+        display: none;
+    }
+}
+
+.lg-visible{
+    display: none;
+    @media screen and (min-width: 1024px){
+        display: inline-block;
+    }
+}
+
+.lg-invisible{
+    @media screen and (min-width: 1024px){
+        display: none;
+    }
+}

@@ -54,4 +54,12 @@
             }
         }
     }
+
+    @media screen and (min-width: 1024px){
+        .banner-swiper,
+        .swiper-wrapper{
+            height: 75vh;
+            max-height: 500px;
+        }
+    }
 }

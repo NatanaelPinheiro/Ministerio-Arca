@@ -9,7 +9,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("../../assets/images/texture_1.png");
+  background-image: url("../../assets/textures/texture_1.png");
 }
 .altar--header {
   display: flex;
@@ -148,13 +148,30 @@
   line-height: 1.7;
   color: var(--white-color);
 }
+.altar--content-right .calendar p {
+  margin-top: 1.5rem;
+  max-width: 400px;
+}
+.altar--content-right .calendar--cta {
+  display: inline-block;
+  margin-top: 1rem;
+  padding-bottom: 2px;
+  font-size: 14px;
+  font-style: italic;
+  border-bottom: 1px solid var(--white-color);
+  line-height: 17px;
+  color: var(--white-color);
+}
+.altar--content-right .calendar--cta img {
+  margin-bottom: -1px;
+}
 .altar--content-right .md-visible {
   margin-top: 1.5rem;
 }
 .altar--content-right .md-visible p {
   margin-bottom: 3px;
 }
-.altar--content-right .md-visible span {
+.altar--content-right .md-visible .bold-white {
   font-size: 14px;
   font-weight: bold;
   color: var(--white-color);
@@ -172,6 +189,10 @@
 @media screen and (min-width: 768px) {
   .altar {
     padding: 2rem 2rem 3rem 2rem;
+  }
+  .altar--header h2 {
+    font-size: 25px;
+    line-height: 1.3;
   }
   .altar--content {
     padding-top: 3rem;
@@ -202,5 +223,54 @@
   .altar--content-right {
     padding: 0;
     width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .altar {
+    padding: 3rem;
+  }
+  .altar--content {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .altar--content-left .altar-swiper {
+    width: 30vw;
+  }
+  .altar--content-left .altar-swiper .swiper-wrapper .swiper-slide .slide-image {
+    height: 100%;
+  }
+  .altar--content-left .altar-swiper .swiper-wrapper .swiper-slide .slide-content {
+    display: none;
+  }
+  .altar--content-left .altar-swiper .swiper-button-prev,
+  .altar--content-left .altar-swiper .swiper-button-next {
+    top: 50% !important;
+    transition: translateY(-50%);
+  }
+  .altar--content-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .altar--content-right .slide-text {
+    display: none;
+  }
+  .altar--content-right .slide-text p {
+    max-width: 400px;
+  }
+  .altar--content-right .slide-text--cta {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.5rem 1.3rem;
+    text-align: center;
+    border-radius: 5px;
+    background-color: var(--palette-yellow);
+    font-size: 17px;
+    line-height: 17px;
+    color: var(--white-color);
+  }
+  .altar--content-right .slide-text--cta img {
+    margin-bottom: -1px;
   }
 }/*# sourceMappingURL=altar.css.map */

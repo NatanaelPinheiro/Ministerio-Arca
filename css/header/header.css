@@ -60,7 +60,7 @@ header #navbar .navbar-mobile {
   width: 70%;
   padding: 17px 0 0 2rem;
   background-color: var(--background-color);
-  background-image: url("../../assets/images/texture_3.png");
+  background-image: url("../../assets/textures/texture_3.png");
   transform: translateX(-100%);
   transition: transform 0.5s;
   z-index: 12;
@@ -114,7 +114,7 @@ header #navbar .navbar-mobile--footer {
   width: 100%;
   padding: 2rem 0 2rem 0;
   background-color: #2e0601;
-  background-image: url("../../assets/images/texture_2.png");
+  background-image: url("../../assets/textures/texture_2.png");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -147,5 +147,20 @@ header #navbar .navbar-desktop .navbar--list--item a {
   }
   header #navbar .navbar-desktop {
     display: block;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header {
+    height: 80px;
+  }
+  header #navbar {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  header #navbar .navbar-logo img {
+    width: 120px;
+  }
+  header #navbar .navbar-desktop .navbar--list--item a {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=header.css.map */

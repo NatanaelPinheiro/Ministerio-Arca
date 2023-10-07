@@ -58,4 +58,11 @@
   padding: 0.5rem 1rem;
   border-radius: 5px;
   color: #826d06;
+}
+@media screen and (min-width: 1024px) {
+  .banner .banner-swiper,
+  .banner .swiper-wrapper {
+    height: 75vh;
+    max-height: 500px;
+  }
 }/*# sourceMappingURL=banner.css.map */

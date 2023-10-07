@@ -26,11 +26,12 @@ var altar_swiper = new Swiper(".altar-swiper ", {
   slidesPerView: (window.innerWidth < 768 ) ? 'auto' : 1,
   spaceBetween: (window.innerWidth < 768 ) ? 20 : 0,
   freeMode: false,
-  autoplay: (window.innerWidth < 768 ) ? false : {delay: 2000},
+  autoplay: (window.innerWidth < 768 ) ? false : {delay: 2500},
   centeredSlides: true,
   mousewheel: {
     releaseOnEdges: true,
   },
+  slideActiveClass: 'altar-slide-active',
   allowTouchMove: (window.innerWidth < 768 ) ? true : false,
   mousewheel: false,
   navigation: {
