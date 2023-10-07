@@ -32,9 +32,6 @@
 .about-us--content-left p b {
   color: #ebc710;
 }
-.about-us--content-left .md-visible {
-  display: none;
-}
 .about-us--content-left .md-visible h3 {
   font-size: 17px;
   color: var(--primary-color);
@@ -48,9 +45,6 @@
     flex-direction: row;
     align-items: flex-start;
     padding-top: 3rem;
-  }
-  .about-us--content-left .md-visible {
-    display: block;
   }
   .about-us--content-right iframe {
     width: auto !important;

@@ -54,13 +54,13 @@
   border-radius: 15px;
 }
 .altar--content-left .altar-swiper {
-  width: auto;
   width: 100vw;
   position: relative;
 }
 .altar--content-left .altar-swiper .swiper-wrapper {
   border-radius: 15px;
   width: 80vw;
+  max-width: 280px;
 }
 .altar--content-left .altar-swiper .swiper-wrapper .slide-image {
   position: absolute;
@@ -139,7 +139,6 @@
 .altar--content-right h3 {
   font-size: 17px;
   margin-bottom: 1rem;
-  padding: 0.5rem;
   width: -moz-fit-content;
   width: fit-content;
   color: var(--white-color);
@@ -148,4 +147,59 @@
   font-size: 13px;
   line-height: 1.7;
   color: var(--white-color);
+}
+.altar--content-right .md-visible {
+  margin-top: 1.5rem;
+}
+.altar--content-right .md-visible p {
+  margin-bottom: 3px;
+}
+.altar--content-right .md-visible span {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--white-color);
+  margin-right: 0.3rem;
+}
+.altar--content-right .md-visible ul {
+  margin-top: 0.5rem;
+}
+.altar--content-right .md-visible ul li {
+  font-size: 13px;
+  line-height: 1.7;
+  margin-left: 1.5rem;
+  color: var(--white-color);
+}
+@media screen and (min-width: 768px) {
+  .altar {
+    padding: 2rem 2rem 3rem 2rem;
+  }
+  .altar--content {
+    padding-top: 3rem;
+    flex-direction: row;
+  }
+  .altar--content-left {
+    margin: 0;
+    min-width: 45vw;
+  }
+  .altar--content-left .swiper-wrapper,
+  .altar--content-left .altar-swiper {
+    height: 360px;
+  }
+  .altar--content-left .altar-swiper {
+    width: auto;
+    overflow: hidden;
+  }
+  .altar--content-left .altar-swiper .swiper-wrapper .swiper-slide .slide-image {
+    height: 45%;
+  }
+  .altar--content-left .altar-swiper .swiper-wrapper .swiper-slide .slide-content {
+    height: 55%;
+  }
+  .altar--content-left .altar-swiper .swiper-button-prev,
+  .altar--content-left .altar-swiper .swiper-button-next {
+    top: 35% !important;
+  }
+  .altar--content-right {
+    padding: 0;
+  }
 }/*# sourceMappingURL=altar.css.map */

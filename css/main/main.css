@@ -48,4 +48,13 @@ a {
 
 li {
   list-style: none;
+}
+
+.md-visible {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .md-visible {
+    display: block;
+  }
 }/*# sourceMappingURL=main.css.map */

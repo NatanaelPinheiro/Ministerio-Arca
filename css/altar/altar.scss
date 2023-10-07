@@ -2,7 +2,6 @@
     position: relative;
     padding: 2rem 0;
     background-color: #9e2d2d;
-    // background-image: linear-gradient(to top right, #a88208, #a78927, #bb9311, #E6B308ff);
     background-image: linear-gradient(to top right, #63160c, #8c2626,#9e2d2d, #ac1515, #b80a0a);
     &::after{
         z-index: 0;
@@ -57,12 +56,12 @@
             }
 
             .altar-swiper{
-                width: auto;
                 width: 100vw;
                 position: relative;
                 .swiper-wrapper{
                     border-radius: 15px;
                     width: 80vw;
+                    max-width: 280px;
                     .slide-image{
                         position: absolute;
                         top: 0;
@@ -145,7 +144,6 @@
             h3{
                 font-size: 17px;
                 margin-bottom: 1rem;
-                padding: 0.5rem;
                 width: fit-content;
                 color: var(--white-color);
             }
@@ -153,6 +151,64 @@
                 font-size: 13px;
                 line-height: 1.7;
                 color: var(--white-color);
+            }
+            .md-visible{
+                margin-top: 1.5rem;
+                p{
+                    margin-bottom: 3px;
+                }
+                span{
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: var(--white-color);
+                    margin-right: 0.3rem;
+                }
+                ul{
+                    margin-top: 0.5rem;
+                    li{
+                        font-size: 13px;
+                        line-height: 1.7;
+                        margin-left: 1.5rem;
+                        color: var(--white-color);
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px){
+        padding: 2rem 2rem 3rem 2rem;
+        &--content{
+            padding-top: 3rem;
+            flex-direction: row;
+            &-left{
+                margin: 0;
+                min-width: 45vw;
+                .swiper-wrapper,
+                .altar-swiper{
+                    height: 360px;
+                }
+                .altar-swiper{
+                    width: auto;
+                    overflow: hidden;
+                    .swiper-wrapper{
+                        .swiper-slide{
+                            .slide-image{
+                                height: 45%;
+                            }
+                            .slide-content{
+                                height: 55%;
+                            }
+                        }
+                    }
+                    .swiper-button-prev,
+                    .swiper-button-next{
+                        top: 35% !important;
+                    }
+                }
+            }
+            &-right{
+                padding: 0;
             }
         }
     }

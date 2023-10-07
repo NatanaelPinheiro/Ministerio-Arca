@@ -23,15 +23,15 @@ var teams_swiper = new Swiper(".banner-swiper ", {
 var altar_swiper = new Swiper(".altar-swiper ", {
   loopedSlides: 3,
   loop: true,
-  slidesPerView: 'auto',
-  spaceBetween: 20,
+  slidesPerView: (window.innerWidth < 768 ) ? 'auto' : 1,
+  spaceBetween: (window.innerWidth < 768 ) ? 20 : 0,
   freeMode: false,
-  autoplay: false,
+  autoplay: (window.innerWidth < 768 ) ? false : {delay: 2000},
   centeredSlides: true,
   mousewheel: {
     releaseOnEdges: true,
   },
-  allowTouchMove: true,
+  allowTouchMove: (window.innerWidth < 768 ) ? true : false,
   mousewheel: false,
   navigation: {
     nextEl: '.swiper-button-next',

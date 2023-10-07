@@ -32,7 +32,6 @@
                 }
             }
             .md-visible{
-                display: none;
                 h3{
                     font-size: 17px;
                     color: var(--primary-color);
@@ -65,11 +64,6 @@
             flex-direction: row;
             align-items: flex-start;
             padding-top: 3rem;
-            &-left{
-                .md-visible{
-                    display: block;
-                }
-            }
             &-right{
                 iframe{
                     width: auto !important;
