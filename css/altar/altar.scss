@@ -1,15 +1,19 @@
+
 .altar{
     position: relative;
-    padding: 2rem 0;
-    background-color: #9e2d2d;
-    background-image: linear-gradient(to top right, #63160c, #8c2626,#9e2d2d, #ac1515, #b80a0a);
-    &::after{
-        z-index: 0;
-        content: '';
-        position: absolute;
-        inset: 0;
-        background-image: url('../../assets/textures/texture_1.png');
-    }
+    padding: 4rem 0;
+    z-index: 10;
+    max-width: 1004px;
+    margin: 0 auto;
+    // background-color: #9e2d2d;
+    // background-image: linear-gradient(to top right, #63160c, #8c2626,#9e2d2d, #ac1515, #b80a0a);
+    // &::after{
+    //     z-index: 0;
+    //     content: '';
+    //     position: absolute;
+    //     inset: 0;
+    //     background-image: url('../../assets/textures/texture_1.png');
+    // }
 
     &--header{
         display: flex;
@@ -18,18 +22,20 @@
         justify-content: center;
         padding: 0 1.5rem;
         h2{
+            font-family: 'Lato', serif;
             z-index: 100;
-            font-size: 20px;
-            text-transform: capitalize;
+            text-transform: uppercase;
             width: 100%;
+            font-weight: 500;
+            font-size: 40px;
             text-align: center;
-            color: var(--white-color);
+            color: var(--primary-color);
         }
         p{
+            display: none;
             z-index: 100;
-            font-size: 13px;
             text-transform: capitalize;
-            color: var(--white-color);
+            color: var(--primary-color);
             opacity: 0.9;
             text-align: center;
         }
@@ -37,15 +43,15 @@
     &--content{
         display: flex;
         flex-direction: column;
-        padding: 2rem 0 0;
+        padding: 4rem 0 0;
         gap: 2rem;
 
         &-left{
             position: relative;
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             overflow: hidden;
-            margin: 0 auto;
+            // margin: 0 auto;
 
             .swiper-wrapper,
             .altar-swiper{
@@ -61,7 +67,7 @@
                 .swiper-wrapper{
                     border-radius: 15px;
                     width: 80vw;
-                    max-width: 280px;
+                    max-width: 400px;
                     .slide-image{
                         position: absolute;
                         top: 0;
@@ -139,21 +145,29 @@
             }
         }
         &-right{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
             z-index: 100;
             padding: 0 1.5rem;
             h3{
-                font-size: 17px;
-                margin-bottom: 1rem;
+                font-family: 'Lato', serif;
+                font-weight: 600;
+                text-transform: uppercase;
+                font-size: 25px;
+                margin-bottom: 1.5rem;
                 width: fit-content;
-                color: var(--white-color);
+                color: var(--primary-color);
             }
             p{
-                font-size: 13px;
+                font-size: 12px;
                 line-height: 1.7;
-                color: var(--white-color);
+                color: var(--text-color-primary);
             }
             .calendar{
                 p{
+                    display: none;
                     margin-top: 1.5rem;
                     max-width: 400px;
                 }
@@ -163,9 +177,9 @@
                     padding-bottom: 2px;
                     font-size: 14px;
                     font-style: italic;
-                    border-bottom: 1px solid var(--white-color);
+                    border-bottom: 1px solid var(--palette-yellow);
                     line-height: 17px;
-                    color: var(--white-color);
+                    color: var(--palette-yellow);
                     img{
                         margin-bottom: -1px;
                     }
@@ -197,12 +211,12 @@
 
     @media screen and (min-width: 768px){
         padding: 2rem 2rem 3rem 2rem;
-        &--header{
-            h2{
-                font-size: 25px;
-                line-height: 1.3;
-            }
-        }
+        // &--header{
+        //     h2{
+        //         font-size: 25px;
+        //         line-height: 1.3;
+        //     }
+        // }
         &--content{
             padding-top: 3rem;
             flex-direction: row;
@@ -242,13 +256,16 @@
     }
 
     @media screen and (min-width: 1024px){
-        padding: 3rem;
+        padding: 4.5rem 0 6rem 0;
         &--content{
-            max-width: 1100px;
-            margin: 0 auto;
+            padding-top: 6rem;
+            gap: 3rem;
             &-left{
+                min-width: 0;
+                width: 100%;
                 .altar-swiper{
-                    width: 30vw;
+                    width: 90%;
+                    height: auto;
                     .swiper-wrapper{
                         .swiper-slide{
                             .slide-image{
@@ -267,9 +284,9 @@
                 }
             }
             &-right{
+                width: 100%;
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
                 align-items: flex-start;
                 .slide-text{
                     display: none;
@@ -278,19 +295,47 @@
                     }
                     &--cta{
                         display: inline-block;
-                        margin-top: 1.5rem;
-                        padding: 0.5rem 1.3rem;
-                        text-align: center;
+                        margin-top: 2rem;
+                        padding: 0.8rem 1.2rem;
                         border-radius: 5px;
+                        text-align: center;
                         background-color: var(--palette-yellow);
                         font-size: 17px;
                         line-height: 17px;
                         color: var(--white-color);
+                        text-transform: uppercase;
+                        transition: all .4s ease;
                         img{
                             margin-bottom: -1px;
                         }
+                        &:hover{
+                            background-color: #bc930c;
+                        }
                     }
                 }
+            }
+        }
+    }
+
+    @media screen and (max-width: 860px){
+        &--content{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    @media screen and (max-width: 425px){
+        &--header{
+            h2{
+                text-align: center;
+                font-size: 28px;
+                font-weight: 600;
+            }
+        }
+
+        &--content{
+            &-right{
+                padding-top: 1.5rem;
             }
         }
     }

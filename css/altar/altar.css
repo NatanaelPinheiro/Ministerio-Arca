@@ -1,15 +1,9 @@
 .altar {
   position: relative;
-  padding: 2rem 0;
-  background-color: #9e2d2d;
-  background-image: linear-gradient(to top right, #63160c, #8c2626, #9e2d2d, #ac1515, #b80a0a);
-}
-.altar::after {
-  z-index: 0;
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("../../assets/textures/texture_1.png");
+  padding: 4rem 0;
+  z-index: 10;
+  max-width: 1004px;
+  margin: 0 auto;
 }
 .altar--header {
   display: flex;
@@ -19,33 +13,34 @@
   padding: 0 1.5rem;
 }
 .altar--header h2 {
+  font-family: "Lato", serif;
   z-index: 100;
-  font-size: 20px;
-  text-transform: capitalize;
+  text-transform: uppercase;
   width: 100%;
+  font-weight: 500;
+  font-size: 40px;
   text-align: center;
-  color: var(--white-color);
+  color: var(--primary-color);
 }
 .altar--header p {
+  display: none;
   z-index: 100;
-  font-size: 13px;
   text-transform: capitalize;
-  color: var(--white-color);
+  color: var(--primary-color);
   opacity: 0.9;
   text-align: center;
 }
 .altar--content {
   display: flex;
   flex-direction: column;
-  padding: 2rem 0 0;
+  padding: 4rem 0 0;
   gap: 2rem;
 }
 .altar--content-left {
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   overflow: hidden;
-  margin: 0 auto;
 }
 .altar--content-left .swiper-wrapper,
 .altar--content-left .altar-swiper {
@@ -60,7 +55,7 @@
 .altar--content-left .altar-swiper .swiper-wrapper {
   border-radius: 15px;
   width: 80vw;
-  max-width: 280px;
+  max-width: 400px;
 }
 .altar--content-left .altar-swiper .swiper-wrapper .slide-image {
   position: absolute;
@@ -133,22 +128,30 @@
   color: var(--white-color) !important;
 }
 .altar--content-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
   z-index: 100;
   padding: 0 1.5rem;
 }
 .altar--content-right h3 {
-  font-size: 17px;
-  margin-bottom: 1rem;
+  font-family: "Lato", serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 25px;
+  margin-bottom: 1.5rem;
   width: -moz-fit-content;
   width: fit-content;
-  color: var(--white-color);
+  color: var(--primary-color);
 }
 .altar--content-right p {
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.7;
-  color: var(--white-color);
+  color: var(--text-color-primary);
 }
 .altar--content-right .calendar p {
+  display: none;
   margin-top: 1.5rem;
   max-width: 400px;
 }
@@ -158,9 +161,9 @@
   padding-bottom: 2px;
   font-size: 14px;
   font-style: italic;
-  border-bottom: 1px solid var(--white-color);
+  border-bottom: 1px solid var(--palette-yellow);
   line-height: 17px;
-  color: var(--white-color);
+  color: var(--palette-yellow);
 }
 .altar--content-right .calendar--cta img {
   margin-bottom: -1px;
@@ -189,10 +192,6 @@
 @media screen and (min-width: 768px) {
   .altar {
     padding: 2rem 2rem 3rem 2rem;
-  }
-  .altar--header h2 {
-    font-size: 25px;
-    line-height: 1.3;
   }
   .altar--content {
     padding-top: 3rem;
@@ -227,14 +226,19 @@
 }
 @media screen and (min-width: 1024px) {
   .altar {
-    padding: 3rem;
+    padding: 4.5rem 0 6rem 0;
   }
   .altar--content {
-    max-width: 1100px;
-    margin: 0 auto;
+    padding-top: 6rem;
+    gap: 3rem;
+  }
+  .altar--content-left {
+    min-width: 0;
+    width: 100%;
   }
   .altar--content-left .altar-swiper {
-    width: 30vw;
+    width: 90%;
+    height: auto;
   }
   .altar--content-left .altar-swiper .swiper-wrapper .swiper-slide .slide-image {
     height: 100%;
@@ -248,9 +252,9 @@
     transition: translateY(-50%);
   }
   .altar--content-right {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
   }
   .altar--content-right .slide-text {
@@ -261,16 +265,37 @@
   }
   .altar--content-right .slide-text--cta {
     display: inline-block;
-    margin-top: 1.5rem;
-    padding: 0.5rem 1.3rem;
-    text-align: center;
+    margin-top: 2rem;
+    padding: 0.8rem 1.2rem;
     border-radius: 5px;
+    text-align: center;
     background-color: var(--palette-yellow);
     font-size: 17px;
     line-height: 17px;
     color: var(--white-color);
+    text-transform: uppercase;
+    transition: all 0.4s ease;
   }
   .altar--content-right .slide-text--cta img {
     margin-bottom: -1px;
+  }
+  .altar--content-right .slide-text--cta:hover {
+    background-color: #bc930c;
+  }
+}
+@media screen and (max-width: 860px) {
+  .altar--content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 425px) {
+  .altar--header h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .altar--content-right {
+    padding-top: 1.5rem;
   }
 }/*# sourceMappingURL=altar.css.map */

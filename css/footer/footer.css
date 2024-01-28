@@ -1,13 +1,14 @@
 footer {
   width: 100%;
   background-color: var(--background-color);
-  padding: 2rem 0 0 0;
 }
 footer .links {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 0 1.5rem 1rem 1.5rem;
+  padding: 2rem 1.5rem;
+  max-width: 1004px;
+  margin: 0 auto;
 }
 footer .links h4 {
   font-size: 16px;
@@ -23,18 +24,24 @@ footer .links ul li a {
   color: var(--white-color);
 }
 footer .copy {
-  padding: 1rem 1rem 1.5rem 1rem;
+  padding: 2rem 1rem 2rem 1rem;
   background-color: #200400;
+}
+footer .copy .copy-content {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 1004px;
+  margin: 0 auto;
 }
-footer .copy img {
+footer .copy .copy-content img {
   width: 70px;
   height: auto;
   margin-bottom: 0.5rem;
 }
-footer .copy p {
+footer .copy .copy-content p {
   text-align: center;
   font-size: 13px;
   line-height: 1.4;

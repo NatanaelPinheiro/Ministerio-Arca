@@ -1,3 +1,32 @@
+changeHeaderBackground(document.documentElement.scrollTop)
+window.onscroll = function (e){
+    let distanceScrolled = document.documentElement.scrollTop;
+    changeHeaderBackground(distanceScrolled);
+}
+
+function changeHeaderBackground(distanceScrolled){
+    const header = document.getElementById('header');
+    const sectionSobreNos = document.getElementById('sobre-nos');
+    const sectionAcoesSociais = document.getElementById('acoes-sociais');
+
+    if(header){
+        if(distanceScrolled > 80){
+            header.classList.add('colorfull-bg');
+        }else{
+            header.classList.remove('colorfull-bg');
+        }
+
+        // if(sectionAcoesSociais.getBoundingClientRect().top <= 0 && sectionAcoesSociais.getBoundingClientRect().bottom >= 90){
+        //     header.classList.remove('colorfull-bg');
+        // }
+
+    }
+
+}
+
+
+// ===============================
+
 const navMobile = document.querySelector('.navbar-mobile');
 function toggleMenu(){
     navMobile.classList.toggle('active');
@@ -60,5 +89,22 @@ function checkSlideIndex(){
     let slideTextActive = document.querySelector(`.slide-text-${slideTextNumber}`);
     if(slideTextActive){
         slideTextActive.style.display = 'inline-block';
+    }
+}
+
+// ===============================
+
+window.addEventListener('scroll', fadeUp);
+
+function fadeUp(){
+    let reveals = document.querySelectorAll('.fade-up');
+    for(let i = 0; i < reveals.length; i++){
+        let windowHeight = window.innerHeight;
+        let revealTop = reveals[i].getBoundingClientRect().top;
+        let revealPoint = 100;
+
+        if(revealTop < windowHeight - revealPoint){
+            reveals[i].classList.add('active');
+        }
     }
 }

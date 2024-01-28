@@ -11,21 +11,25 @@
     <link rel="preload" href="./js/swiper.min.js" as="script">
     <link rel="preload" href="./js/swiper.js" as="script">
     <link rel="preload" href="./assets/icons/arca_logo.png" as="image">
-    <link rel="preload" href="./assets/images/banner_img_1.jpeg" as="image">
-    <link rel="preload" href="./assets/images/banner_img_2.jpeg" as="image">
+    <!-- <link rel="preload" href="./assets/images/banner_img_1.jpeg" as="image"> -->
+    <!-- <link rel="preload" href="./assets/images/banner_img_2.jpeg" as="image"> -->
 
     <!-- styles -->
     <link rel="stylesheet" href="./css/swiper-minified/swiper.min.css"/>
     <link rel="stylesheet" href="./css/main/main.css">
     <link rel="stylesheet" href="./css/header/header.css">
     <link rel="stylesheet" href="./css/banner/banner.css">
+    <link rel="stylesheet" href="./css/direction/direction.css">
     <link rel="stylesheet" href="./css/about-us/about-us.css">
+    <link rel="stylesheet" href="./css/acoes-socias/acoes-sociais.css">
+    <link rel="stylesheet" href="./css/donations/donations.css">
     <link rel="stylesheet" href="./css/altar/altar.css">
     <link rel="stylesheet" href="./css/actions/actions.css">
+    <link rel="stylesheet" href="./css/divisors/divisors.css">
     <link rel="stylesheet" href="./css/footer/footer.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <div id="navbar">
             <a href="index.html" class="navbar-logo">
                 <img src="./assets/icons/arca_logo.png" alt="Ministério Arca">
@@ -33,9 +37,12 @@
             <div class="navbar-desktop">
                 <ul class="navbar--list">
                     <li class="navbar--list--item"><a href="#inicio">Início</a></li>
-                    <li class="navbar--list--item"><a href="#sobre-nos">Sobre Nós</a></li>
-                    <li class="navbar--list--item"><a href="#nosso-altar">Nosso Altar</a></li>
-                    <li class="navbar--list--item"><a href="#acoes-realizadas">Ações Realizadas</a></li>
+                    <li class="navbar--list--item"><a href="#acoes-sociais">Ações do Ministério</a></li>
+                    <!-- <li class="navbar--list--item"><a href="#direction">Direção</a></li> -->
+                    <li class="navbar--list--item"><a href="#sobre-nos">Saiba Mais</a></li>
+                    <li class="navbar--list--item"><a href="#congregacoes">Congregações</a></li>
+                    <li class="navbar--list--item"><a href="#nosso-altar">Liderança</a></li>
+                    <!-- <li class="navbar--list--item"><a href="#acoes-realizadas">Ações Realizadas</a></li> -->
                 </ul>
             </div>
             <div class="menu-burger" onclick="toggleMenu()">
@@ -48,9 +55,10 @@
                 </div>
                 <ul class="navbar-mobile--list">
                     <li class="navbar-mobile--list--item"><a href="#inicio">Início</a></li>
-                    <li class="navbar-mobile--list--item"><a href="#sobre-nos">Sobre Nós</a></li>
-                    <li class="navbar-mobile--list--item"><a href="#nosso-altar">Nosso Altar</a></li>
-                    <li class="navbar-mobile--list--item"><a href="#acoes-realizadas">Ações Realizadas</a></li>
+                    <li class="navbar-mobile--list--item"><a href="#acoes-sociais">Ações do Ministério</a></li>
+                    <li class="navbar-mobile--list--item"><a href="#sobre-nos">Saiba Mais</a></li>
+                    <li class="navbar-mobile--list--item"><a href="#congregacoes">Congregações</a></li>
+                    <li class="navbar-mobile--list--item"><a href="#nosso-altar">Liderança</a></li>
                 </ul>
                 <div class="navbar-mobile--footer">
                     <p>AD Ministério Pentecostal Arca</p>
@@ -59,70 +67,269 @@
         </div>
     </header>
     <main>
-        <div id="inicio" class="banner">
+        <section id="inicio" class="banner">
             <div class="banner-swiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+                    <!-- <div class="swiper-slide">
                         <div class="slide-image">
                             <img src="./assets/images/banner_img_2.jpeg">
                         </div>
                         <div class="slide-content">
                             <img src="./assets/icons/arca_logo.png" alt="Ministério Pentecostal Arca">
-                            <h3 class="slide-content--title">AD Ministério Arca</h3>
+                            <h3 class="slide-content--title">AD Ministério <span class="lg-visible">Pentecostal</span> Arca</h3>
                             <p class="slide-content--subtitle">Em busca da ovelha perdida</p>
-                            <a class="slide-content--cta" href="#sobre-nos">Conhecer mais</a>
+                            <a class="slide-content--cta" href="#sobre-nos">Sobre Nosso Ministério</a>
+                        </div>
+                    </div> -->
+                    <div class="swiper-slide">
+                        <!-- <div class="slide-image">
+                            <img src="./assets/images/banner_img_1.jpeg">
+                        </div> -->
+                        <div class="slide-content">
+                            <img src="./assets/icons/arca_logo.png" alt="Ministério Pentecostal Arca">
+                            <h3 class="slide-content--title">AD Ministério <span class="lg-visible">Pentecostal</span> Arca</h3>
+                            <p class="slide-content--subtitle">Em busca da ovelha perdida</p>
+                            <a class="slide-content--cta" href="#acoes-sociais">Continue Explorando</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+        </section>
+        <section id="infinite-scroll">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="thumbContainer">
+                            <div class="projectInfo">
+                                <h3 class="serif">Culto todos as quartas, sextas e domingos na sede.</h2>
+                            </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="slide-image">
-                            <img src="./assets/images/banner_img_1.jpeg">
-                        </div>
-                        <div class="slide-content">
-                            <img src="./assets/icons/arca_logo.png" alt="Ministério Pentecostal Arca">
-                            <h3 class="slide-content--title">AD Ministério Arca</h3>
-                            <p class="slide-content--subtitle">Em busca da ovelha perdida</p>
-                            <a class="slide-content--cta" href="#sobre-nos">Conhecer mais</a>
+                        <div class="thumbContainer">
+                            <div class="projectInfo">
+                                <h3 class="serif">Aos domingos, culto inicia-se às 18:30.</h2>
+                            </div>
                         </div>
                     </div>
+                    <div class="swiper-slide">
+                        <div class="thumbContainer">
+                            <div class="projectInfo">
+                                <h3 class="serif">Santa Ceia no 4º domingo do mês.</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="thumbContainer">
+                            <div class="projectInfo">
+                                <h3 class="serif">Aos domingos, culto inicia-se às 18:30.</h2>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </section>
+        <!-- <section id="direction">
+            <div class="direction">
+                <div class="direction--header">
+                    <h2 class="section-title">Fundadores Da Arca</h2>
+                    <p class="section-subtitle">Embaixadores do <span>Ministério Pentecostal Arca</span></p>
+                </div>
+                <div class="direction--content">
+                    <div class="left">
+                        <div class="text">
+                            <h3>Pr. Antônio e Pra. Fátima</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Modi porro provident ut at harum ea adipisci debitis aut
+                                sunt obcaecati qui iusto Modi porro provident ut at harum ea adipisci debitis aut
+                                sunt obcaecati qui iusto amet commodi fugit rem magni, repellat
+                                accusamus suscipit amet commodi fugit rem magni, repellat
+                                accusamus suscipit impedit doloribus asperiores illum! Totam
+                                vitae iusto a iure illum?
+                            </p>
+                        </div>
+                        <a href="#acoes-realizadas" class="cta">Saiba Mais</a>
+                    </div>
+                    <div class="right">
+                        <div class="img-container">
+                            <img src="./assets/images/dirigentes.png" alt="Fundadores">
+                            <p class="img-footer">Pr. Antônio e Pra. Fátima</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <section id="acoes-sociais">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="thumbContainer">
+                            <div class="left">
+                                <h3>Fundadores Do Ministério</h3>
+                                <p>
+                                    Há mais de 5 anos, o Ministério Arca, fundado pelo Pastor Antônio e sua esposa Fátima,
+                                    tem sido um farol de esperança. Guiados por Deus, dedicamos nossos esforços a resgatar
+                                    vidas e espalhar o Evangelho a todas as criaturas. Junte-se a nós nessa jornada
+                                    transformadora, onde Deus é sempre o guia para nossos passos.
+                                </p>
+                                <a href="#">Saiba Mais</a>
+                            </div>
+                            <div class="right right--image-1">
+                                <img src="./assets/images/dirigentes.png" alt="Fundadores do Ministério">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="thumbContainer">
+                            <div class="left">
+                                <h3>Sede Batalha</h3>
+                                <p>
+                                    A Congregação do Ministério Arca, em Batalha, está em crescimento. Cultos
+                                    fervorosos ocorrem todas as quintas, dedicadas a campanhas inspiradoras,
+                                    e aos domingos, momentos reverentes de adoração. Junte-se a nós na construção
+                                    de uma comunidade espiritual forte e vibrante.
+                                </p>
+                                <a href="#">Saiba Mais</a>
+                            </div>
+                            <div class="right right--image-2">
+                                <img src="./assets/images/batalha.jpeg" alt="Congregação na Batalha">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="thumbContainer">
+                            <div class="left">
+                                <h3>Batismo Anual</h3>
+                                <p>
+                                    O Ministério Arca celebra batismos anuais, antecedendo nossa festa especial. Nesse momento único, testemunhamos
+                                    transformações profundas e bênçãos divinas. Muitos experimentam o recebimento de dons do Espírito Santo,
+                                    fortalecendo a fé e construindo uma comunidade abençoada. Junte-se a nós e deixe ser usado pelo Espirito Santo.
+                                </p>
+                                </p>
+                                <a href="#">Saiba Mais</a>
+                            </div>
+                            <div class="right right--image-3">
+                                <img src="./assets/images/batismo.jpeg" alt="Batismo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="thumbContainer">
+                            <div class="left">
+                                <h3>Evangelizações</h3>
+                                <p>
+                                    O Ministério Arca se dedica à evangelização nas cidades, compartilhando a palavra
+                                    divina e resgatando almas para o Reino de Deus. Em nossas missões, levamos não
+                                    apenas a mensagem espiritual, mas também auxílio prático, distribuindo comida,
+                                    cobertores e cestas básicas. Toda honra e glória ao nosso Deus.
+                                </p>
+                                <a href="#">Saiba Mais</a>
+                            </div>
+                            <div class="right right--image-4">
+                                <img src="./assets/images/pastor-4.jpg" alt="Evangelização">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="thumbContainer">
+                            <div class="left">
+                                <h3>Semanas de Campanha</h3>
+                                <p>
+                                    O Ministério também promove cultos significativos na congregação da Batalha, guiados
+                                    pelo dedicado obreiro Neto, juntamente com as irmãs Lúcia e Lindalva. Regularmente,
+                                    abordamos temas específicos em nossas campanhas, fortalecendo a fé e o crescimento
+                                    espiritual da comunidade. Venha compartilhar esses momentos especiais conosco.
+                                </p>
+                                <a href="#">Saiba Mais</a>
+                            </div>
+                            <div class="right right--image-5">
+                                <img src="./assets/images/batalha.jpeg" alt="Campanha na Batalha">
+                            </div>
+                        </div>
+                    </div>   
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
-        </div>
-        <div id="sobre-nos">
+        </section>
+        <section id="sobre-nos" class="fade-up">
             <div class="about-us">
                 <div class="about-us--header">
-                    <h2>Sobre Nós<span class="lg-visible">, Conheça o Nosso Ministério Pentecostal</span></h2>
-                    <p class="lg-invisible">Conheça o nosso Ministério Pentecostal</p>
+                    <h2 class="section-title">Saiba Mais</h2>
+                    <p class="section-subtitle">Conheça o nosso Ministério Pentecostal</p>
                 </div>
                 <div class="about-us--content">
                     <div class="about-us--content-left">
-                        <div class="md-visible">
-                            <h3>AD Ministério Pentecostal Arca</h3>
+                        <div class="left">
+                            <img src="./assets/images/culto-senhoras.jpeg" alt="Culto Campal">
                         </div>
-                        <p>
-                            A <b>AD Ministério Pentecostal Arca</b>,
-                            é um Ministério Pentecostal, levantado com o objetivo
-                            de adorar e exaltar a presença de Deus. Aqui, você tem liberdade
-                            pra deixar ser guiado pelo Espírito Santo de Deus.
-                        </p>
-                        <div class="md-visible">
-                            <p>
-                                A palavra de Deus diz:
-                                <q>Ide por todo o mundo, pregai o evangelho a toda criatura.</q>
-                                E todos os anos, os líderes do Ministério reúnem forças e fé,
-                                para continuar fazendo a obra de Deus, e realizar os seus chamados.
-                                <br><b>Venha fazer parte da família Arca!</b>
+                        <div class="right">
+                            <h3>Ministério Arca</h3>
+                            <p class="md-visible">
+                                A <b>AD Ministério Pentecostal Arca</b>,
+                                é um Ministério Pentecostal, levantado com o objetivo
+                                de adorar e exaltar a presença de Deus. Aqui, você tem liberdade
+                                pra deixar ser guiado pelo Espírito Santo de Deus.
                             </p>
+                            <div class="sm-visible">
+                                <p>
+                                    A AD Ministério Pentecostal Arca é uma comunidade Pentecostal erguida para adorar e exaltar a presença de Deus. Aqui, a liberdade reina, permitindo que todos se deixem guiar pelo Espírito Santo. Como ordenado pela palavra de Deus, "Ide por todo o mundo, pregai o evangelho a toda criatura", anualmente, nossos líderes fortalecem sua fé para persistir na obra divina e atender aos chamados. Somos um Ministério dedicado à propagação do evangelho, proporcionando um espaço onde a adoração e a espiritualidade florescem, unindo-nos na missão de compartilhar a mensagem divina e realizar os propósitos de Deus.                                </p>
+                            </div>
+                            <div class="md-visible">
+                                <p>
+                                    A palavra de Deus diz:
+                                    <q>Ide por todo o mundo, pregai o evangelho a toda criatura.</q>
+                                    E todos os anos, os líderes do Ministério reúnem forças e fé,
+                                    para continuar fazendo a obra de Deus, e realizar os seus chamados.
+                                </p>
+                            </div>
+                            <a href="https://wa.me/5508591453500" target="_blank" class="cta">Fale conosco</a>
                         </div>
                     </div>
-                    <div class="about-us--content-right">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.6196712061965!2d-38.64713312583414!3d-4.293836695680108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b8cd298cd4ebdd%3A0x7f1ed0b84ddf7330!2sMinist%C3%A9rio%20Pentecostal%20Arca!5e0!3m2!1spt-BR!2sbr!4v1695771254700!5m2!1spt-BR!2sbr" 
-                            style="width:100%;height:300px;border:0;"
-                            allowfullscreen="true"
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
+                    <div class="about-us--content-right" id="congregacoes">
+                        <h3>congregações</h3>
+                        <div class="cards">
+                            <div class="card">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.6196712061965!2d-38.64713312583414!3d-4.293836695680108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b8cd298cd4ebdd%3A0x7f1ed0b84ddf7330!2sMinist%C3%A9rio%20Pentecostal%20Arca!5e0!3m2!1spt-BR!2sbr!4v1695771254700!5m2!1spt-BR!2sbr" 
+                                    style="width:100%;height:300px;border:0;"
+                                    allowfullscreen="true"
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                                <div class="card-body">
+                                    <h4>Sede Ministério Arca</h4>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.6196712061965!2d-38.64713312583414!3d-4.293836695680108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b8cd298cd4ebdd%3A0x7f1ed0b84ddf7330!2sMinist%C3%A9rio%20Pentecostal%20Arca!5e0!3m2!1spt-BR!2sbr!4v1695771254700!5m2!1spt-BR!2sbr" 
+                                    style="width:100%;height:300px;border:0;"
+                                    allowfullscreen="true"
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                                <div class="card-body">
+                                    <h4>Ministério em Batalha</h4>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.6196712061965!2d-38.64713312583414!3d-4.293836695680108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b8cd298cd4ebdd%3A0x7f1ed0b84ddf7330!2sMinist%C3%A9rio%20Pentecostal%20Arca!5e0!3m2!1spt-BR!2sbr!4v1695771254700!5m2!1spt-BR!2sbr" 
+                                    style="width:100%;height:300px;border:0;"
+                                    allowfullscreen="true"
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                                <div class="card-body">
+                                    <h4>Ministério em Chorozinho</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="cards-footer">Todas as quintas, campanha na Congregação de Batalha, dirigidos pelo Obreiro Neto e pelas irmãs Lúcia e Lindalva. <u>Venha nos conhecer!</u></p>
                         <!-- <div
                             class="lazy-load-map"
                             data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.6196712061965!2d-38.64713312583414!3d-4.293836695680108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b8cd298cd4ebdd%3A0x7f1ed0b84ddf7330!2sMinist%C3%A9rio%20Pentecostal%20Arca!5e0!3m2!1spt-BR!2sbr!4v1695771254700!5m2!1spt-BR!2sbr">
@@ -130,16 +337,197 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="nosso-altar">
-            <div class="altar">
+            <!-- <div class="fast-divider"></div> -->
+        </section>
+        <!-- <div class="divider">
+            <img src="./assets/icons/arca_logo.png" alt="Ministério Pentecostal Arca">
+        </div> -->
+        <!-- TODO: Doacoes section -->
+        <!-- <section id="doacoes">
+        </section> -->
+
+        <!-- <section class="cover lg-invisible">
+            <section id="acoes-realizadas">
+                <div class="actions fade-up">
+                    <div class="actions--header">
+                        <h2 class="section-title">Batismos, Evangelismos e Mais</h2>
+                        <p class="section-subtitle">Todos os anos, realizamos diversas ações sociais, <br>com o objetivo de contribuir e levar o envangelho à todos.</p>
+                    </div>
+                    <div class="actions--content">
+                        <div class="actions-swiper lg-invisible">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="slide-image">
+                                        <img src="./assets/images/batismo_2.jpeg" loading="lazy">
+                                        <p>Barreira - CE, 2022</p>
+                                    </div>
+                                    <div class="slide-content">
+                                        <h3 class="slide-content--title">Batismo Anual</h3>
+                                        <p class="slide-content--text">
+                                            Todos os anos, antes do aniversário do Ministério,
+                                            ocorre o <b>batismo nas águas</b>. Antes disso, os irmãos
+                                            passam por um período de discipulado, para aprender
+                                            mais sobre o batismo, e a palavra.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide-image">
+                                        <video controls>
+                                            <source src="./assets/videos/media_igreja.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                            </video>
+                                    </div>
+                                    <div class="slide-content">
+                                        <h3 class="slide-content--title">Ganhando vidas para Jesus</h3>
+                                        <p class="slide-content--text">
+                                            Momento lindo na Sede, em que <b>vidas são ganhas para Jesus</b>. Ao final do culto,
+                                            os obreiros e diáconos, oraram pelos que queriam reconciliação e
+                                            aceitar Jesus.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide-image">
+                                        <img src="./assets/images/evangelizacao.jpeg" loading="lazy">
+                                        <p>Barreira - CE, 2023</p>
+                                    </div>
+                                    <div class="slide-content">
+                                        <h3 class="slide-content--title">Evangelização</h3>
+                                        <p class="slide-content--text">
+                                            Todos os meses, os líderes do Ministério se reunem em uma
+                                            praça em Fortaleza, CE. Lá, evangelizam, levam comida aos
+                                            moradores de rua, e ganham alma para a <b>glória de Deus</b>.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide-image">
+                                        <img src="./assets/images/batalha.jpeg" loading="lazy">
+                                        <p>Sede Batalha, 2023</p>
+                                    </div>
+                                    <div class="slide-content">
+                                        <h3 class="slide-content--title">Sede Batalha</h3>
+                                        <p class="slide-content--text">
+                                            Culto de Senhoras na Sede do Ministério, no bairro de Batalha.
+                                            Mesmo a sede estando em desenvolvimento, frequentemente ocorrem
+                                            cultos abençoados e com <b>muita unção do Espirito Santo</b>.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+    
+                        <div class="actions-cards lg-visible">
+                            <div class="card card-1">
+                                <div class="card--logo">
+                                    <img src="./assets/icons/arca_logo.png" alt="Ministério Pentecostal Arca" class="arca-logo">
+                                </div>
+                                <div class="card--image">
+                                    <img src="./assets/images/batalha.jpeg" alt="Sede Batalha" class="bg-image">
+                                </div>
+                                <div class="card--hover">
+                                    <h4>Sede Batalha</h4>
+                                    <p>
+                                        Todos os meses, os líderes do Ministério se reunem em uma
+                                        praça em Fortaleza, CE. Lá, evangelizam, levam comida aos
+                                        moradores de rua, e ganham alma para a glória de Deus.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card card-2">
+                                <div class="card--logo">
+                                    <img src="./assets/icons/arca_logo.png" alt="Ministério Pentecostal Arca" class="arca-logo">
+                                </div>
+                                <div class="card--image">
+                                    <img src="./assets/images/batismo.jpeg" alt="Batismo Anual" class="bg-image">
+                                </div>
+                                <div class="card--hover">
+                                    <h4>Batismo Anual</h4>
+                                    <p>
+                                        Todos os meses, os líderes do Ministério se reunem em uma
+                                        praça em Fortaleza, CE. Lá, evangelizam, levam comida aos
+                                        moradores de rua, e ganham alma para a glória de Deus.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card card-3">
+                                <div class="card--logo">
+                                    <img src="./assets/icons/arca_logo.png" alt="Ministério Pentecostal Arca" class="arca-logo">
+                                </div>
+                                <div class="card--image">
+                                    <img src="./assets/images/evangelizacao.jpeg" alt="Evangelização" class="bg-image">
+                                </div>
+                                <div class="card--hover">
+                                    <h4>Evangelização</h4>
+                                    <p>
+                                        Todos os meses, os líderes do Ministério se reunem em uma
+                                        praça em Fortaleza, CE. Lá, evangelizam, levam comida aos
+                                        moradores de rua, e ganham alma para a glória de Deus.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card card-4">
+                                <div class="card--logo">
+                                    <img src="./assets/icons/arca_logo.png" alt="Ministério Pentecostal Arca" class="arca-logo">
+                                </div>
+                                <div class="card--image">
+                                    <img src="./assets/images/batalha.jpeg" alt="Sede Batalha" class="bg-image">
+                                </div>
+                                <div class="card--hover">
+                                    <h4>Sede Batalha</h4>
+                                    <p>
+                                        Todos os meses, os líderes do Ministério se reunem em uma
+                                        praça em Fortaleza, CE. Lá, evangelizam, levam comida aos
+                                        moradores de rua, e ganham alma para a glória de Deus.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card card-5">
+                                <div class="card--logo">
+                                    <img src="./assets/icons/arca_logo.png" alt="Ministério Pentecostal Arca" class="arca-logo">
+                                </div>
+                                <div class="card--image">
+                                    <img src="./assets/images/batismo.jpeg" alt="Batismo Anual" class="bg-image">
+                                </div>
+                                <div class="card--hover">
+                                    <h4>Batismo Anual</h4>
+                                    <p>
+                                        Todos os meses, os líderes do Ministério se reunem em uma
+                                        praça em Fortaleza, CE. Lá, evangelizam, levam comida aos
+                                        moradores de rua, e ganham alma para a glória de Deus.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card card-6">
+                                <div class="card--logo">
+                                    <img src="./assets/icons/arca_logo.png" alt="Ministério Pentecostal Arca" class="arca-logo">
+                                </div>
+                                <div class="card--image">
+                                    <img src="./assets/images/evangelizacao.jpeg" alt="Evangelização" class="bg-image">
+                                </div>
+                                <div class="card--hover">
+                                    <h4>Evangelização</h4>
+                                    <p>
+                                        Todos os meses, os líderes do Ministério se reunem em uma
+                                        praça em Fortaleza, CE. Lá, evangelizam, levam comida aos
+                                        moradores de rua, e ganham alma para a glória de Deus.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section> -->
+        <section id="nosso-altar">
+            <div class="altar fade-up">
                 <div class="altar--header">
-                    <h2>
-                        Conheça Nosso <span>Altar</span>
-                        <br class="lg-visible">
-                        <span class="lg-visible">Nossas lideranças e conjuntos.</span>
+                    <h2 class="section-title">
+                        Liderança e Conjuntos
                     </h2>
-                    <p class="lg-invisible">Nossas lideranças e conjuntos.</p>
+                    <p class="lg-invisible">Nossa liderança e conjuntos.</p>
                 </div>
                 <div class="altar--content">
                     <div class="altar--content-left">
@@ -147,13 +535,13 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="slide-image">
-                                        <img src="./assets/images/pastor.jpeg">
+                                        <img src="./assets/images/pastor-4.jpg" loading="lazy">
                                     </div>
                                     <div class="slide-content slide-1">
                                         <div class="slide-content--header">
                                             <h3 class="slide-content--header-title">Pastor Antônio</h3>
                                             <p class="slide-content--header-subtitle">
-                                                <img src="./assets/icons/arca_logo.png" alt="Ministério Arca Logo" width="50px">
+                                                <img src="./assets/icons/arca_logo.png" loading="lazy" alt="Ministério Arca Logo" width="50px">
                                             </p>
                                         </div>
                                         <div class="slide-content--main">
@@ -164,7 +552,7 @@
                                                 palavra à toda criatura.
                                             </p>
                                         </div>
-                                        <a class="slide-content--cta" href="./assets/atas/ata-example.pdf" download="ata_geral_ministerio_arca">
+                                        <a class="slide-content--cta" href="./assets/atas/ata-example.pdf" target="_blank" download="ata_geral_ministerio_arca">
                                             <img src="./assets/icons/download_icon.svg">
                                             Baixar Ata
                                         </a>
@@ -172,13 +560,13 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="slide-image">
-                                        <img src="./assets/images/obreiros.jpeg">
+                                        <img src="./assets/images/obreiros.jpeg" loading="lazy">
                                     </div>
                                     <div class="slide-content slide-2">
                                         <div class="slide-content--header">
                                             <h3 class="slide-content--header-title">Altar Completo</h3>
                                             <p class="slide-content--header-subtitle">
-                                                <img src="./assets/icons/arca_logo.png" alt="Ministério Arca Logo" width="50px">
+                                                <img src="./assets/icons/arca_logo.png" loading="lazy" alt="Ministério Arca Logo" width="50px">
                                             </p>
                                         </div>
                                         <div class="slide-content--main">
@@ -187,7 +575,7 @@
                                                 que auxiliam na realização da Obra de Deus.
                                             </p>
                                         </div>
-                                        <a class="slide-content--cta" href="./assets/atas/ata-example.pdf" download="ata_quadro_de_obreiros">
+                                        <a class="slide-content--cta" href="./assets/atas/ata-example.pdf" target="_blank" download="ata_quadro_de_obreiros">
                                             <img src="./assets/icons/download_icon.svg">
                                             Baixar Ata
                                         </a>
@@ -195,13 +583,13 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="slide-image">
-                                        <img src="./assets/images/batismo.jpeg">
+                                        <img src="./assets/images/conj-senhoras.jpg" loading="lazy">
                                     </div>
                                     <div class="slide-content slide-3">
                                         <div class="slide-content--header">
                                             <h3 class="slide-content--header-title">Essência Divina</h3>
                                             <p class="slide-content--header-subtitle">
-                                                <img src="./assets/icons/arca_logo.png" alt="Ministério Arca Logo" width="50px">
+                                                <img src="./assets/icons/arca_logo.png" loading="lazy" alt="Ministério Arca Logo" width="50px">
                                             </p>
                                         </div>
                                         <div class="slide-content--main">
@@ -211,7 +599,7 @@
                                                 as ciladas do inimigo.
                                             </p>
                                         </div>
-                                        <a class="slide-content--cta" href="./assets/atas/ata-example.pdf" download="ata_conjunto_de_senhoras">
+                                        <a class="slide-content--cta" href="./assets/atas/ata-example.pdf" target="_blank" download="ata_conjunto_de_senhoras">
                                             <img src="./assets/icons/download_icon.svg">
                                             Baixar Ata
                                         </a>
@@ -219,13 +607,13 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="slide-image">
-                                        <img src="./assets/images/jovens.jpeg">
+                                        <img src="./assets/images/jovens.jpeg" loading="lazy">
                                     </div>
                                     <div class="slide-content slide-4">
                                         <div class="slide-content--header">
                                             <h3 class="slide-content--header-title">Jovens para Cristo</h3>
                                             <p class="slide-content--header-subtitle">
-                                                <img src="./assets/icons/arca_logo.png" alt="Ministério Arca Logo" width="50px">
+                                                <img src="./assets/icons/arca_logo.png" loading="lazy" alt="Ministério Arca Logo" width="50px">
                                             </p>
                                         </div>
                                         <div class="slide-content--main">
@@ -234,7 +622,7 @@
                                                 e empenhados em continuar nos pés do Senhor.
                                             </p>
                                         </div>
-                                        <a class="slide-content--cta" href="./assets/atas/ata-example.pdf" download="ata_conjunto_de_jovens">
+                                        <a class="slide-content--cta" href="./assets/atas/ata-example.pdf" target="_blank" download="ata_conjunto_de_jovens">
                                             <img src="./assets/icons/download_icon.svg">
                                             Baixar Ata
                                         </a>
@@ -250,12 +638,9 @@
                         <div class="slide-text slide-text-1 lg-visible">
                             <h3>Pastor Antônio</h3>
                             <p>
-                                Pastor, fundador do Ministério Pentecostal Arca, em 2019.
-                                Desde então, vem fazendo a Obra de Deus, evangelizando e pregando a
-                                palavra à toda criatura. Além da Sede, o Ministério Arca possui outro templo
-                                localizado no bairro de Batalha, em Barreira, Ceará.
+                                Fundador do Ministério Pentecostal Arca em 2019, o Pastor tem se dedicado incansavelmente à Obra de Deus. Sua missão abrange a evangelização e a proclamação da palavra divina a todas as criaturas. Desde o início, sua visão tem moldado um caminho de fé e transformação, guiando a congregação com zelo e inspiração. Junte-se a nós nessa jornada de devoção e propósito espiritual.
                             </p>
-                            <a class="slide-text--cta" href="./assets/atas/ata-example.pdf" download="ata_geral_ministerio_arca">
+                            <a class="slide-text--cta" href="./assets/atas/ata-example.pdf" target="_blank" download="ata_geral_ministerio_arca">
                                 <img src="./assets/icons/download_icon.svg">
                                 Baixar Ata - Ministérial
                             </a>
@@ -263,12 +648,9 @@
                         <div class="slide-text slide-text-2 lg-visible">
                             <h3>Altar Completo</h3>
                             <p>
-                                O Altar conta com Pastores, Presbíteros, Diáconos, e obreiros,
-                                que auxiliam diariamente na realização da Obra de Deus, dirigindo
-                                cultos, missões, ações de graça e evangelismos por todo a cidade
-                                de Barreira, além de cidades vizinhas.
+                                No Altar, contamos com a presença dedicada de Pastores, Presbíteros, Diáconos e obreiros, desempenhando um papel vital na execução diária da Obra de Deus. Esses membros comprometidos lideram cultos, missões, ações de graça e iniciativas evangelísticas, abrangendo não apenas a cidade de Barreira, mas também localidades vizinhas. Juntos, trabalhamos incansavelmente para espalhar a mensagem divina e fortalecer nossa comunidade espiritual.
                             </p>
-                            <a class="slide-text--cta" href="./assets/atas/ata-example.pdf" download="ata_quadro_de_obreiros">
+                            <a class="slide-text--cta" href="./assets/atas/ata-example.pdf" target="_blank" download="ata_quadro_de_obreiros">
                                 <img src="./assets/icons/download_icon.svg">
                                 Baixar Ata - Obreiros
                             </a>
@@ -276,12 +658,9 @@
                         <div class="slide-text slide-text-3 lg-visible">
                             <h3>Conjunto de Senhoras</h3>
                             <p>
-                                Conjunto formado pelas senhoras casadas, do Ministério.
-                                Grupo seleto, que exige dedicação e coragem, pra continuar lutando contra
-                                as ciladas do inimigo. Uma vez por mês, dirigem um culto especial, que conta
-                                com a presença de diversos Conjuntos externos, e muita adoração ao Senhor.
+                                Composto pelas senhoras casadas do Ministério, esse grupo seleta exige dedicação e coragem para enfrentar as ciladas do inimigo. Mensalmente, lideram um culto especial, atraindo conjuntos externos e oferecendo uma atmosfera vibrante de adoração ao Senhor. Juntas, essas mulheres demonstram compromisso e fortaleza espiritual na luta contra as adversidades, inspirando a comunidade a seguir o mesmo caminho de fé e louvor.
                             </p>
-                            <a class="slide-text--cta" href="./assets/atas/ata-example.pdf" download="ata_conjunto_de_senhoras">
+                            <a class="slide-text--cta" href="./assets/atas/ata-example.pdf" target="_blank" download="ata_conjunto_de_senhoras">
                                 <img src="./assets/icons/download_icon.svg">
                                 Baixar Ata - Senhoras
                             </a>
@@ -289,13 +668,9 @@
                         <div class="slide-text slide-text-4 lg-visible">
                             <h3>Conjunto de Jovens</h3>
                             <p>
-                                Conjunto mais recente, formado por jovens batizados nas águas
-                                e empenhados em continuar nos pés do Senhor. Todo mês, os jovens
-                                do conjunto têm a oportunidade de dirigir um culto. Nesse culto, com
-                                direcionamento à mocidade, jovens de diversos ministérios contam com
-                                a oportunidade de dar o seu melhor louvor à Deus.
+                                Recém-criado, o conjunto de jovens é formado por aqueles que foram batizados nas águas e estão comprometidos em seguir os caminhos do Senhor. Mensalmente, esses jovens têm a chance de liderar um culto especial, focado na mocidade. Durante esse evento, jovens de diferentes ministérios têm a oportunidade de oferecer seus melhores louvores a Deus, criando um ambiente de adoração dinâmico e inspirador.
                             </p>
-                            <a class="slide-text--cta" href="./assets/atas/ata-example.pdf" download="ata_conjunto_de_jovens">
+                            <a class="slide-text--cta" href="./assets/atas/ata-example.pdf" target="_blank" download="ata_conjunto_de_jovens">
                                 <img src="./assets/icons/download_icon.svg">
                                 Baixar Ata - Jovens
                             </a>
@@ -308,17 +683,6 @@
                             Nas sextas, culto de oração, e nos domingos, cultos
                             de família, missões, avivamentos e Santa Ceias.
                         </p>
-                        <div class="md-visible lg-invisible">
-                            <p><span class="bold-white">Quartas:</span> Doutrinas<span class="lg-visible">, Culto de Senhoras, Culto de Jovens</span></p>
-                            <p><span class="bold-white">Sextas:</span> Culto de Oração</p>
-                            <span class="bold-white">Domingos:</span>
-                            <ul>
-                                <li>1° Dom: Família</li>
-                                <li>2° Dom: Avivamento</li>
-                                <li>3° Dom: Missão</li>
-                                <li>4° Dom: Santa Ceia</li>
-                            </ul>
-                        </div>
                         <div class="lg-visible calendar">
                             <p>
                                 Durante os mês, os cultos são organizados com direfentes temáticas,
@@ -332,81 +696,12 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="acoes-realizadas">
-            <div class="actions">
-                <div class="actions--header">
-                    <h2>Nossas Ações</h2>
-                    <p>Batismos, evangelismos, cultos campais.</p>
-                </div>
-                <div class="actions--content">
-                    <div class="actions-swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="slide-image">
-                                    <img src="./assets/images/batismo_2.jpeg">
-                                    <p>Barreira - CE, 2022</p>
-                                </div>
-                                <div class="slide-content">
-                                    <h3 class="slide-content--title">Batismo Anual</h3>
-                                    <p class="slide-content--text">
-                                        Todos os anos, antes do aniversário do Ministério,
-                                        ocorre o <b>batismo nas águas</b>. Antes disso, os irmãos
-                                        passam por um período de discipulado, para aprender
-                                        mais sobre o batismo, e a palavra.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="slide-image">
-                                    <video controls>
-                                        <source src="./assets/videos/media_igreja.mp4" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                      </video>
-                                </div>
-                                <div class="slide-content">
-                                    <h3 class="slide-content--title">Ganhando vidas para Jesus</h3>
-                                    <p class="slide-content--text">
-                                        Momento lindo na Sede, em que <b>vidas são ganhas para Jesus</b>. Ao final do culto,
-                                        os obreiros e diáconos, oraram pelos que queriam reconciliação e
-                                        aceitar Jesus.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="slide-image">
-                                    <img src="./assets/images/evangelizacao.jpeg">
-                                    <p>Barreira - CE, 2023</p>
-                                </div>
-                                <div class="slide-content">
-                                    <h3 class="slide-content--title">Evangelização</h3>
-                                    <p class="slide-content--text">
-                                        Todos os meses, os líderes do Ministério se reunem em uma
-                                        praça em Fortaleza, CE. Lá, evangelizam, levam comida aos
-                                        moradores de rua, e ganham alma para a <b>glória de Deus</b>.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="slide-image">
-                                    <img src="./assets/images/batalha.jpeg">
-                                    <p>Sede Batalha, 2023</p>
-                                </div>
-                                <div class="slide-content">
-                                    <h3 class="slide-content--title">Sede Batalha</h3>
-                                    <p class="slide-content--text">
-                                        Culto de Senhoras na Sede do Ministério, no bairro de Batalha.
-                                        Mesmo a sede estando em desenvolvimento, frequentemente ocorrem
-                                        cultos abençoados e com <b>muita unção do Espirito Santo</b>.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </section>
+        <section id="mensagem-biblica">
+            <p>
+                Vinde a mim, todos os que estais cansados e sobrecarregados, <br>e eu vos aliviarei.
+            </p>
+        </section>
     </main>
     <footer>
         <div class="links">
@@ -414,9 +709,10 @@
                 <h4>Links <span>rápidos</span></h4>
                 <ul>
                     <li><a href="#inicio">Início</a></li>
-                    <li><a href="#sobre-nos">Sobre nós</a></li>
-                    <li><a href="#nosso-altar">Nosso altar</a></li>
-                    <li><a href="#acoes-realizadas">Ações Realizadas</a></li>
+                    <li><a href="#acoes-sociais">Ações do Ministério</a></li>
+                    <li><a href="#sobre-nos">Saiba Mais</a></li>
+                    <li><a href="#congregacoes">Congregações</a></li>
+                    <li><a href="#nosso-altar">lideranças</a></li>
                 </ul>
             </div>
             <div class="links-right">
@@ -429,8 +725,10 @@
             </div>
         </div>
         <div class="copy">
-            <img src="./assets/icons/arca_logo.png" alt="Ministério Pentecostal Arca">
-            <p>Todos os direitos reservados. <br> AD Ministério Pentecostal Arca &copy; 2023.</p>
+            <div class="copy-content">
+                <img src="./assets/icons/arca_logo.png" loading="lazy" alt="Ministério Pentecostal Arca">
+                <p>Todos os direitos reservados. <br> AD Ministério Pentecostal Arca &copy; 2023.</p>
+            </div>
         </div>
     </footer>
 
