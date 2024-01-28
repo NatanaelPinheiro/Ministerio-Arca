@@ -11,20 +11,15 @@
     <link rel="preload" href="./js/swiper.min.js" as="script">
     <link rel="preload" href="./js/swiper.js" as="script">
     <link rel="preload" href="./assets/icons/arca_logo.png" as="image">
-    <!-- <link rel="preload" href="./assets/images/banner_img_1.jpeg" as="image"> -->
-    <!-- <link rel="preload" href="./assets/images/banner_img_2.jpeg" as="image"> -->
 
     <!-- styles -->
     <link rel="stylesheet" href="./css/swiper-minified/swiper.min.css"/>
     <link rel="stylesheet" href="./css/main/main.css">
     <link rel="stylesheet" href="./css/header/header.css">
     <link rel="stylesheet" href="./css/banner/banner.css">
-    <link rel="stylesheet" href="./css/direction/direction.css">
     <link rel="stylesheet" href="./css/about-us/about-us.css">
     <link rel="stylesheet" href="./css/acoes-socias/acoes-sociais.css">
-    <link rel="stylesheet" href="./css/donations/donations.css">
     <link rel="stylesheet" href="./css/altar/altar.css">
-    <link rel="stylesheet" href="./css/actions/actions.css">
     <link rel="stylesheet" href="./css/divisors/divisors.css">
     <link rel="stylesheet" href="./css/footer/footer.css">
 </head>
@@ -38,11 +33,9 @@
                 <ul class="navbar--list">
                     <li class="navbar--list--item"><a href="#inicio">Início</a></li>
                     <li class="navbar--list--item"><a href="#acoes-sociais">Ações do Ministério</a></li>
-                    <!-- <li class="navbar--list--item"><a href="#direction">Direção</a></li> -->
                     <li class="navbar--list--item"><a href="#sobre-nos">Saiba Mais</a></li>
                     <li class="navbar--list--item"><a href="#congregacoes">Congregações</a></li>
                     <li class="navbar--list--item"><a href="#nosso-altar">Liderança</a></li>
-                    <!-- <li class="navbar--list--item"><a href="#acoes-realizadas">Ações Realizadas</a></li> -->
                 </ul>
             </div>
             <div class="menu-burger" onclick="toggleMenu()">
@@ -70,21 +63,7 @@
         <section id="inicio" class="banner">
             <div class="banner-swiper">
                 <div class="swiper-wrapper">
-                    <!-- <div class="swiper-slide">
-                        <div class="slide-image">
-                            <img src="./assets/images/banner_img_2.jpeg">
-                        </div>
-                        <div class="slide-content">
-                            <img src="./assets/icons/arca_logo.png" alt="Ministério Pentecostal Arca">
-                            <h3 class="slide-content--title">AD Ministério <span class="lg-visible">Pentecostal</span> Arca</h3>
-                            <p class="slide-content--subtitle">Em busca da ovelha perdida</p>
-                            <a class="slide-content--cta" href="#sobre-nos">Sobre Nosso Ministério</a>
-                        </div>
-                    </div> -->
                     <div class="swiper-slide">
-                        <!-- <div class="slide-image">
-                            <img src="./assets/images/banner_img_1.jpeg">
-                        </div> -->
                         <div class="slide-content">
                             <img src="./assets/icons/arca_logo.png" alt="Ministério Pentecostal Arca">
                             <h3 class="slide-content--title">AD Ministério <span class="lg-visible">Pentecostal</span> Arca</h3>
@@ -93,7 +72,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="swiper-pagination"></div> -->
             </div>
         </section>
         <section id="infinite-scroll">
@@ -130,37 +108,6 @@
                 </div>
             </div>
         </section>
-        <!-- <section id="direction">
-            <div class="direction">
-                <div class="direction--header">
-                    <h2 class="section-title">Fundadores Da Arca</h2>
-                    <p class="section-subtitle">Embaixadores do <span>Ministério Pentecostal Arca</span></p>
-                </div>
-                <div class="direction--content">
-                    <div class="left">
-                        <div class="text">
-                            <h3>Pr. Antônio e Pra. Fátima</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Modi porro provident ut at harum ea adipisci debitis aut
-                                sunt obcaecati qui iusto Modi porro provident ut at harum ea adipisci debitis aut
-                                sunt obcaecati qui iusto amet commodi fugit rem magni, repellat
-                                accusamus suscipit amet commodi fugit rem magni, repellat
-                                accusamus suscipit impedit doloribus asperiores illum! Totam
-                                vitae iusto a iure illum?
-                            </p>
-                        </div>
-                        <a href="#acoes-realizadas" class="cta">Saiba Mais</a>
-                    </div>
-                    <div class="right">
-                        <div class="img-container">
-                            <img src="./assets/images/dirigentes.png" alt="Fundadores">
-                            <p class="img-footer">Pr. Antônio e Pra. Fátima</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
         <section id="acoes-sociais">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
@@ -174,12 +121,11 @@
                                     vidas e espalhar o Evangelho a todas as criaturas. Junte-se a nós nessa jornada
                                     transformadora, onde Deus é sempre o guia para nossos passos.
                                 </p>
-                                <a href="#">Saiba Mais</a>
+                                <a href="#nosso-altar">Saiba Mais</a>
                             </div>
                             <div class="right right--image-1">
                                 <img src="./assets/images/dirigentes.png" alt="Fundadores do Ministério">
                             </div>
-
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -192,12 +138,11 @@
                                     e aos domingos, momentos reverentes de adoração. Junte-se a nós na construção
                                     de uma comunidade espiritual forte e vibrante.
                                 </p>
-                                <a href="#">Saiba Mais</a>
+                                <a href="#sobre-nos">Saiba Mais</a>
                             </div>
                             <div class="right right--image-2">
                                 <img src="./assets/images/batalha.jpeg" alt="Congregação na Batalha">
                             </div>
-
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -210,7 +155,7 @@
                                     fortalecendo a fé e construindo uma comunidade abençoada. Junte-se a nós e deixe ser usado pelo Espirito Santo.
                                 </p>
                                 </p>
-                                <a href="#">Saiba Mais</a>
+                                <a href="https://wa.me/5508591453500">Saiba Mais</a>
                             </div>
                             <div class="right right--image-3">
                                 <img src="./assets/images/batismo.jpeg" alt="Batismo">
@@ -227,7 +172,7 @@
                                     apenas a mensagem espiritual, mas também auxílio prático, distribuindo comida,
                                     cobertores e cestas básicas. Toda honra e glória ao nosso Deus.
                                 </p>
-                                <a href="#">Saiba Mais</a>
+                                <a href="#sobre-nos">Saiba Mais</a>
                             </div>
                             <div class="right right--image-4">
                                 <img src="./assets/images/pastor-4.jpg" alt="Evangelização">
@@ -244,13 +189,13 @@
                                     abordamos temas específicos em nossas campanhas, fortalecendo a fé e o crescimento
                                     espiritual da comunidade. Venha compartilhar esses momentos especiais conosco.
                                 </p>
-                                <a href="#">Saiba Mais</a>
+                                <a href="#sobre-nos">Saiba Mais</a>
                             </div>
                             <div class="right right--image-5">
                                 <img src="./assets/images/batalha.jpeg" alt="Campanha na Batalha">
                             </div>
                         </div>
-                    </div>   
+                    </div>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
@@ -337,190 +282,10 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="fast-divider"></div> -->
         </section>
         <!-- <div class="divider">
             <img src="./assets/icons/arca_logo.png" alt="Ministério Pentecostal Arca">
         </div> -->
-        <!-- TODO: Doacoes section -->
-        <!-- <section id="doacoes">
-        </section> -->
-
-        <!-- <section class="cover lg-invisible">
-            <section id="acoes-realizadas">
-                <div class="actions fade-up">
-                    <div class="actions--header">
-                        <h2 class="section-title">Batismos, Evangelismos e Mais</h2>
-                        <p class="section-subtitle">Todos os anos, realizamos diversas ações sociais, <br>com o objetivo de contribuir e levar o envangelho à todos.</p>
-                    </div>
-                    <div class="actions--content">
-                        <div class="actions-swiper lg-invisible">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="slide-image">
-                                        <img src="./assets/images/batismo_2.jpeg" loading="lazy">
-                                        <p>Barreira - CE, 2022</p>
-                                    </div>
-                                    <div class="slide-content">
-                                        <h3 class="slide-content--title">Batismo Anual</h3>
-                                        <p class="slide-content--text">
-                                            Todos os anos, antes do aniversário do Ministério,
-                                            ocorre o <b>batismo nas águas</b>. Antes disso, os irmãos
-                                            passam por um período de discipulado, para aprender
-                                            mais sobre o batismo, e a palavra.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="slide-image">
-                                        <video controls>
-                                            <source src="./assets/videos/media_igreja.mp4" type="video/mp4">
-                                            Your browser does not support the video tag.
-                                            </video>
-                                    </div>
-                                    <div class="slide-content">
-                                        <h3 class="slide-content--title">Ganhando vidas para Jesus</h3>
-                                        <p class="slide-content--text">
-                                            Momento lindo na Sede, em que <b>vidas são ganhas para Jesus</b>. Ao final do culto,
-                                            os obreiros e diáconos, oraram pelos que queriam reconciliação e
-                                            aceitar Jesus.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="slide-image">
-                                        <img src="./assets/images/evangelizacao.jpeg" loading="lazy">
-                                        <p>Barreira - CE, 2023</p>
-                                    </div>
-                                    <div class="slide-content">
-                                        <h3 class="slide-content--title">Evangelização</h3>
-                                        <p class="slide-content--text">
-                                            Todos os meses, os líderes do Ministério se reunem em uma
-                                            praça em Fortaleza, CE. Lá, evangelizam, levam comida aos
-                                            moradores de rua, e ganham alma para a <b>glória de Deus</b>.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="slide-image">
-                                        <img src="./assets/images/batalha.jpeg" loading="lazy">
-                                        <p>Sede Batalha, 2023</p>
-                                    </div>
-                                    <div class="slide-content">
-                                        <h3 class="slide-content--title">Sede Batalha</h3>
-                                        <p class="slide-content--text">
-                                            Culto de Senhoras na Sede do Ministério, no bairro de Batalha.
-                                            Mesmo a sede estando em desenvolvimento, frequentemente ocorrem
-                                            cultos abençoados e com <b>muita unção do Espirito Santo</b>.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-pagination"></div>
-                        </div>
-    
-                        <div class="actions-cards lg-visible">
-                            <div class="card card-1">
-                                <div class="card--logo">
-                                    <img src="./assets/icons/arca_logo.png" alt="Ministério Pentecostal Arca" class="arca-logo">
-                                </div>
-                                <div class="card--image">
-                                    <img src="./assets/images/batalha.jpeg" alt="Sede Batalha" class="bg-image">
-                                </div>
-                                <div class="card--hover">
-                                    <h4>Sede Batalha</h4>
-                                    <p>
-                                        Todos os meses, os líderes do Ministério se reunem em uma
-                                        praça em Fortaleza, CE. Lá, evangelizam, levam comida aos
-                                        moradores de rua, e ganham alma para a glória de Deus.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card card-2">
-                                <div class="card--logo">
-                                    <img src="./assets/icons/arca_logo.png" alt="Ministério Pentecostal Arca" class="arca-logo">
-                                </div>
-                                <div class="card--image">
-                                    <img src="./assets/images/batismo.jpeg" alt="Batismo Anual" class="bg-image">
-                                </div>
-                                <div class="card--hover">
-                                    <h4>Batismo Anual</h4>
-                                    <p>
-                                        Todos os meses, os líderes do Ministério se reunem em uma
-                                        praça em Fortaleza, CE. Lá, evangelizam, levam comida aos
-                                        moradores de rua, e ganham alma para a glória de Deus.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card card-3">
-                                <div class="card--logo">
-                                    <img src="./assets/icons/arca_logo.png" alt="Ministério Pentecostal Arca" class="arca-logo">
-                                </div>
-                                <div class="card--image">
-                                    <img src="./assets/images/evangelizacao.jpeg" alt="Evangelização" class="bg-image">
-                                </div>
-                                <div class="card--hover">
-                                    <h4>Evangelização</h4>
-                                    <p>
-                                        Todos os meses, os líderes do Ministério se reunem em uma
-                                        praça em Fortaleza, CE. Lá, evangelizam, levam comida aos
-                                        moradores de rua, e ganham alma para a glória de Deus.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card card-4">
-                                <div class="card--logo">
-                                    <img src="./assets/icons/arca_logo.png" alt="Ministério Pentecostal Arca" class="arca-logo">
-                                </div>
-                                <div class="card--image">
-                                    <img src="./assets/images/batalha.jpeg" alt="Sede Batalha" class="bg-image">
-                                </div>
-                                <div class="card--hover">
-                                    <h4>Sede Batalha</h4>
-                                    <p>
-                                        Todos os meses, os líderes do Ministério se reunem em uma
-                                        praça em Fortaleza, CE. Lá, evangelizam, levam comida aos
-                                        moradores de rua, e ganham alma para a glória de Deus.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card card-5">
-                                <div class="card--logo">
-                                    <img src="./assets/icons/arca_logo.png" alt="Ministério Pentecostal Arca" class="arca-logo">
-                                </div>
-                                <div class="card--image">
-                                    <img src="./assets/images/batismo.jpeg" alt="Batismo Anual" class="bg-image">
-                                </div>
-                                <div class="card--hover">
-                                    <h4>Batismo Anual</h4>
-                                    <p>
-                                        Todos os meses, os líderes do Ministério se reunem em uma
-                                        praça em Fortaleza, CE. Lá, evangelizam, levam comida aos
-                                        moradores de rua, e ganham alma para a glória de Deus.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card card-6">
-                                <div class="card--logo">
-                                    <img src="./assets/icons/arca_logo.png" alt="Ministério Pentecostal Arca" class="arca-logo">
-                                </div>
-                                <div class="card--image">
-                                    <img src="./assets/images/evangelizacao.jpeg" alt="Evangelização" class="bg-image">
-                                </div>
-                                <div class="card--hover">
-                                    <h4>Evangelização</h4>
-                                    <p>
-                                        Todos os meses, os líderes do Ministério se reunem em uma
-                                        praça em Fortaleza, CE. Lá, evangelizam, levam comida aos
-                                        moradores de rua, e ganham alma para a glória de Deus.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </section> -->
         <section id="nosso-altar">
             <div class="altar fade-up">
                 <div class="altar--header">
@@ -629,7 +394,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div class="swiper-pagination"></div> -->
                             <div class="swiper-button-prev"></div>
                             <div class="swiper-button-next"></div>
                         </div>

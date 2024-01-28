@@ -1,7 +1,6 @@
 header{
     position: fixed;
     z-index: 100000;
-    // position: absolute;
     height: 80px;
     width: 100%;
     padding: 0 2rem;
@@ -12,7 +11,6 @@ header{
         transition: all .5s ease;
         background-color:#370a03;
         box-shadow: 1px 0px 3px #2208044b;
-        // background-image: linear-gradient(to right, #370d07, #430901,#320802);
     }
 
     #navbar{
